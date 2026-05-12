@@ -105,19 +105,19 @@ mechanical-engineering-research/
 ### Literature Review
 
 ```text
-Use the mechanical-engineering-research skill to review wickability-based CHF enhancement models. Build a critical synthesis instead of a paper-by-paper summary.
+Use the mechanical-engineering-research skill to develop a critical literature review on this thermal-fluid research topic. Synthesize the main theories, methods, limitations, unresolved challenges, and future directions instead of writing a paper-by-paper summary.
 ```
 
 ### Data Analysis Plan
 
 ```text
-Use the mechanical-engineering-research skill to design a hypothesis-driven DOE for CFD cases studying pressure drop and heat transfer in microchannels.
+Use the mechanical-engineering-research skill to design a hypothesis-driven DOE for these experiments or simulations. Start from a baseline case, identify the mechanism being tested, and choose cases that can support or refute the hypothesis.
 ```
 
 ### Figure Discussion
 
 ```text
-Use the mechanical-engineering-research skill to write the results discussion for this boiling curve figure. Follow description, observation, physical explanation, and literature comparison.
+Use the mechanical-engineering-research skill to write the results discussion for this figure. Follow description, observation, physical explanation, and comparison with existing work.
 ```
 
 ### Research Presentation
