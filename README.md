@@ -77,6 +77,7 @@ C:\Users\<you>\.codex\skills\
 | Literature review | Critical review, seminal-work tracing, citation past/future, review figures, benchmark tables | [`literature-review.md`](mechanical-engineering-research/references/literature-review.md) |
 | Technical writing | Introduction logic, methodology detail, modeling assumptions, results discussion | [`technical-writing-analysis.md`](mechanical-engineering-research/references/technical-writing-analysis.md) |
 | Data analysis | Baseline case analysis, hypothesis-driven DOE, plotting, figure interpretation | [`technical-writing-analysis.md`](mechanical-engineering-research/references/technical-writing-analysis.md) |
+| Research coding | Reproducible scripts, notebooks, data pipelines, plotting code, simulation automation, code review | [`research-coding.md`](mechanical-engineering-research/references/research-coding.md) |
 | Presentations | Slide logic, graphics-first storytelling, speaker notes, videos/animations, backup slides | [`presentation-slides.md`](mechanical-engineering-research/references/presentation-slides.md) |
 | AI/ML tools | BubbleID, SeqReg, CFDTwin, DataDroid-LAM, sensor fusion, surrogate modeling | [`ai-tools-thermal-fluids.md`](mechanical-engineering-research/references/ai-tools-thermal-fluids.md) |
 | Briefs | Concise research brief structure for decision-ready engineering summaries | [`brief-template.md`](mechanical-engineering-research/references/brief-template.md) |
@@ -95,6 +96,7 @@ mechanical-engineering-research/
     brief-template.md
     literature-review.md
     presentation-slides.md
+    research-coding.md
     technical-writing-analysis.md
 ```
 
@@ -118,6 +120,12 @@ Use the mechanical-engineering-research skill to design a hypothesis-driven DOE 
 
 ```text
 Use the mechanical-engineering-research skill to write the results discussion for this figure. Follow description, observation, physical explanation, and comparison with existing work.
+```
+
+### Research Coding
+
+```text
+Use the mechanical-engineering-research skill to write a reproducible Python analysis pipeline for this experiment. Start with one baseline case, preserve raw data, make units explicit, and generate publication-quality plots.
 ```
 
 ### Research Presentation
@@ -233,6 +241,7 @@ Contributions are welcome. Good contributions improve reusable research practice
 - stronger literature-review synthesis methods
 - technical writing and results-discussion guidance
 - data-analysis, plotting, and DOE practices
+- reproducible research coding practices
 - presentation design patterns
 - AI/ML workflows for mechanical engineering
 

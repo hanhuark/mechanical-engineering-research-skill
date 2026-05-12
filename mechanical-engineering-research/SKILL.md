@@ -1,6 +1,6 @@
 ---
 name: mechanical-engineering-research
-description: Research and write about thermal-fluid mechanical engineering topics with source-aware rigor. Use when Codex needs to investigate heat transfer, fluid mechanics, thermodynamics, HVAC, energy systems, turbomachinery, pumps, piping, CFD, experiments, correlations, materials in thermal service, standards, datasheets, papers, patents, AI/ML tools for thermal fluids, computer vision, sequence regression, surrogate modeling, or engineering trade studies, and produce an evidence-based technical brief, critical literature review, manuscript-style introduction, methodology, results discussion, data analysis, plot plan, research presentation, slide outline, design comparison, calculation plan, or research roadmap.
+description: Research and write about thermal-fluid mechanical engineering topics with source-aware rigor. Use when Codex needs to investigate heat transfer, fluid mechanics, thermodynamics, HVAC, energy systems, turbomachinery, pumps, piping, CFD, experiments, correlations, materials in thermal service, standards, datasheets, papers, patents, AI/ML tools for thermal fluids, computer vision, sequence regression, surrogate modeling, research coding, or engineering trade studies, and produce an evidence-based technical brief, critical literature review, manuscript-style introduction, methodology, results discussion, data analysis, plot plan, research presentation, slide outline, design comparison, calculation plan, reproducible code, or research roadmap.
 ---
 
 # Mechanical Engineering Research
@@ -60,6 +60,8 @@ For research presentations or slide decks, read `references/presentation-slides.
 
 For AI/ML-assisted thermal-fluid research, read `references/ai-tools-thermal-fluids.md` before recommending computer vision, sequence regression, surrogate modeling, sensor fusion, dimensionality reduction, or data-driven control workflows.
 
+For research code, scripts, notebooks, data pipelines, plotting code, CFD automation, or ML implementation, read `references/research-coding.md` before writing or reviewing code.
+
 ## Thermal-Fluid Checks
 
 Before finalizing, check whether the answer should account for:
@@ -96,3 +98,5 @@ Read `references/literature-review.md` when the user asks for a literature revie
 Read `references/presentation-slides.md` when the user asks for presentation slides, a research talk, conference talk, group-meeting slides, slide-by-slide narrative, speaker notes, animation/video suggestions, or figure-focused storytelling.
 
 Read `references/ai-tools-thermal-fluids.md` when the user asks about AI tools, machine learning, computer vision, BubbleID, SeqReg, CFDTwin, DataDroid-LAM, MEEG-54403, sensor fusion, surrogate modeling, dimensionality reduction, thermal-fluid datasets, or ML-enhanced data analysis.
+
+Read `references/research-coding.md` when the user asks for coding help, research scripts, notebooks, data processing, plotting, reproducibility, simulation automation, CFD post-processing, ML implementation, repository organization, or code review.
