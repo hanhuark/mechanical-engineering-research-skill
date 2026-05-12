@@ -9,6 +9,7 @@ Reusable research guidance for heat transfer, fluid mechanics, boiling, CFD, exp
 [![Skill](https://img.shields.io/badge/Codex-Skill-blue?style=for-the-badge)](mechanical-engineering-research/SKILL.md)
 [![Domain](https://img.shields.io/badge/Domain-Thermal--Fluids-orange?style=for-the-badge)](#capabilities)
 [![Validation](https://img.shields.io/badge/Skill-Validated-brightgreen?style=for-the-badge)](#validation)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/hanhuark/mechanical-engineering-research-skill?style=for-the-badge)](https://github.com/hanhuark/mechanical-engineering-research-skill/stargazers)
 
 ---
@@ -241,4 +242,4 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for details.
 
 ## License
 
-No license has been selected yet. Add a license before public release if you want others to legally reuse, modify, and redistribute the skill.
+MIT License. See [`LICENSE`](LICENSE) for details.
