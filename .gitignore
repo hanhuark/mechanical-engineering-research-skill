@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+__pycache__/
+.pytest_cache/
