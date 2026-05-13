@@ -1,4 +1,4 @@
 interface:
   display_name: "Mechanical Engineering Research"
-  short_description: "Review, write, code, present, analyze, and use AI."
-  default_prompt: "Research, critically review, analyze, code, write, present, or apply AI tools to this thermal-fluid systems question with clear logic flow, source-aware reasoning, and reproducible workflows."
+  short_description: "Research, write, code, present, analyze, use AI, and support IP."
+  default_prompt: "Research, critically review, analyze, code, write, present, support invention disclosure or commercialization, or apply AI tools to this thermal-fluid systems question with clear logic flow, source-aware reasoning, and reproducible workflows."
