@@ -30,6 +30,22 @@ Each skill includes:
 
 ## Quick Install
 
+### From Codex Chat
+
+Ask Codex to install the skill from this GitHub path:
+
+```text
+Install the Codex skill from GitHub repo hanhuark/mechanical-engineering-research-skill, path mechanical-engineering-research.
+```
+
+or provide the full GitHub URL:
+
+```text
+Install the Codex skill from https://github.com/hanhuark/mechanical-engineering-research-skill/tree/main/mechanical-engineering-research
+```
+
+Do not ask Codex to install only `mechanical-engineering-research-skill` by name. That is the repository name, not a curated Codex skill name. Codex's built-in installer recognizes curated skill names automatically, but community skills should be installed from a GitHub repo/path or URL.
+
 ### OpenAI Codex
 
 Clone the repository:
