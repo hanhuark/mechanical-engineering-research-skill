@@ -1,6 +1,6 @@
 ---
 name: mechanical-engineering-research
-description: Research and write about thermal-fluid mechanical engineering topics with source-aware rigor. Use when Codex needs to investigate heat transfer, fluid mechanics, thermodynamics, HVAC, energy systems, turbomachinery, pumps, piping, CFD, experiments, correlations, materials in thermal service, standards, datasheets, papers, patents, AI/ML tools for thermal fluids, computer vision, sequence regression, surrogate modeling, research coding, innovation disclosure, invention disclosure, provisional patent support, patent application technical content, technology commercialization, or engineering trade studies, and produce an evidence-based technical brief, critical literature review, manuscript-style introduction, methodology, results discussion, data analysis, plot plan, research presentation, slide outline, design comparison, calculation plan, reproducible code, commercialization brief, invention disclosure draft, patent-support packet, or research roadmap.
+description: Research and write about thermal-fluid mechanical engineering topics with source-aware rigor. Use when Codex needs to investigate heat transfer, fluid mechanics, thermodynamics, HVAC, energy systems, turbomachinery, pumps, piping, CFD, experiments, correlations, materials in thermal service, standards, datasheets, papers, patents, AI/ML tools for thermal fluids, computer vision, sequence regression, surrogate modeling, research coding, Overleaf manuscripts, VS Code coding/debugging, GitHub repository updating or archiving, git version control, innovation disclosure, invention disclosure, provisional patent support, patent application technical content, technology commercialization, or engineering trade studies, and produce an evidence-based technical brief, critical literature review, manuscript-style introduction, methodology, results discussion, data analysis, plot plan, research presentation, slide outline, design comparison, calculation plan, reproducible code, repository workflow, commercialization brief, invention disclosure draft, patent-support packet, or research roadmap.
 ---
 
 # Mechanical Engineering Research
@@ -62,6 +62,8 @@ For AI/ML-assisted thermal-fluid research, read `references/ai-tools-thermal-flu
 
 For research code, scripts, notebooks, data pipelines, plotting code, CFD automation, or ML implementation, read `references/research-coding.md` before writing or reviewing code.
 
+For research tool workflows involving Overleaf, VS Code, GitHub, or git, read `references/research-toolchain.md` before advising on manuscript collaboration, code/debugging workflow, repository updates, archival releases, branches, commits, tags, or reproducibility hygiene.
+
 For innovation, invention disclosure, provisional patent support, utility patent technical content, or technology commercialization, read `references/innovation-commercialization.md` before drafting disclosure answers, non-confidential summaries, technical descriptions, figure lists, prior-art comparisons, market/use-case notes, inventor response emails, or commercialization briefs. Support the technical and strategic content, but do not provide legal advice; defer claim scope, filing strategy, assignments, declarations, and prosecution decisions to Technology Ventures and patent counsel.
 
 ## Thermal-Fluid Checks
@@ -102,5 +104,7 @@ Read `references/presentation-slides.md` when the user asks for presentation sli
 Read `references/ai-tools-thermal-fluids.md` when the user asks about AI tools, machine learning, computer vision, BubbleID, SeqReg, CFDTwin, DataDroid-LAM, MEEG-54403, sensor fusion, surrogate modeling, dimensionality reduction, thermal-fluid datasets, or ML-enhanced data analysis.
 
 Read `references/research-coding.md` when the user asks for coding help, research scripts, notebooks, data processing, plotting, reproducibility, simulation automation, CFD post-processing, ML implementation, repository organization, or code review.
+
+Read `references/research-toolchain.md` when the user asks about Overleaf writing/editing, VS Code coding/debugging, GitHub repo updating or archiving, git branches/commits/tags/releases, repository hygiene, manuscript-code-data synchronization, or reproducible project handoff.
 
 Read `references/innovation-commercialization.md` when the user asks for invention disclosure, Technology Ventures, Sophia disclosure, provisional patent, utility patent application support, patent counsel feedback, USPTO filing support, notice of allowance/grant tracking, licensing, startup/commercialization strategy, non-confidential summaries, or translating research results into protectable/commercializable technology.
