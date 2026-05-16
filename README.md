@@ -1,8 +1,8 @@
 # Mechanical Engineering Research Skill
 
-**A Codex skill for thermal-fluid mechanical engineering research, technical writing, data analysis, presentations, and AI-assisted workflows.**
+**A Codex skill for thermal-fluid mechanical engineering research, proposal development, technical writing, data analysis, presentations, and AI-assisted workflows.**
 
-Reusable research guidance for heat transfer, fluid mechanics, boiling, CFD, experiments, literature review, manuscript writing, plotting, presentation design, and machine learning tools for mechanical engineers.
+Reusable research guidance for heat transfer, fluid mechanics, boiling, CFD, experiments, literature review, federal proposal development, manuscript writing, plotting, presentation design, and machine learning tools for mechanical engineers.
 
 **Works with:** OpenAI Codex skills
 
@@ -92,6 +92,7 @@ C:\Users\<you>\.codex\skills\
 | Research workflow | Source-aware thermal-fluid research, assumptions, correlations, trade studies, validation | [`SKILL.md`](mechanical-engineering-research/SKILL.md) |
 | Literature review | Critical review, seminal-work tracing, citation past/future, review figures, benchmark tables | [`literature-review.md`](mechanical-engineering-research/references/literature-review.md) |
 | Technical writing | Introduction logic, methodology detail, modeling assumptions, results discussion | [`technical-writing-analysis.md`](mechanical-engineering-research/references/technical-writing-analysis.md) |
+| Proposal development | DOE/NSF/NASA-style proposal narratives, solicitation alignment, review criteria, preliminary results, milestones | [`proposal-development.md`](mechanical-engineering-research/references/proposal-development.md) |
 | Data analysis | Baseline case analysis, hypothesis-driven DOE, plotting, figure interpretation | [`technical-writing-analysis.md`](mechanical-engineering-research/references/technical-writing-analysis.md) |
 | Research coding | Reproducible scripts, notebooks, data pipelines, plotting code, simulation automation, code review | [`research-coding.md`](mechanical-engineering-research/references/research-coding.md) |
 | Presentations | Slide logic, graphics-first storytelling, speaker notes, videos/animations, backup slides | [`presentation-slides.md`](mechanical-engineering-research/references/presentation-slides.md) |
@@ -112,6 +113,7 @@ mechanical-engineering-research/
     brief-template.md
     literature-review.md
     presentation-slides.md
+    proposal-development.md
     research-coding.md
     technical-writing-analysis.md
 ```
@@ -124,6 +126,12 @@ mechanical-engineering-research/
 
 ```text
 Use the mechanical-engineering-research skill to develop a critical literature review on this thermal-fluid research topic. Synthesize the main theories, methods, limitations, unresolved challenges, and future directions instead of writing a paper-by-paper summary.
+```
+
+### Federal Proposal Development
+
+```text
+Use the mechanical-engineering-research skill to expand this DOE EPSCoR pre-application into a full proposal narrative. Follow the solicitation structure, map the narrative to review criteria, integrate preliminary results under each thrust, add quantifiable milestones, and cite seminal, recent, and team-relevant papers.
 ```
 
 ### Data Analysis Plan

@@ -1,6 +1,6 @@
 ---
 name: mechanical-engineering-research
-description: Research, write, code, analyze, and present thermal-fluid mechanical engineering work with source-aware rigor. Use for heat transfer, fluid mechanics, thermodynamics, HVAC, energy systems, turbomachinery, pumps, piping, CFD, experiments, correlations, standards, datasheets, papers, patents, AI/ML tools, computer vision, sequence regression, surrogate modeling, research coding, Overleaf, VS Code, GitHub, git, invention disclosure, provisional patent support, commercialization, and trade studies. Produces technical briefs, critical literature reviews, manuscript sections, methods, results discussions, data-analysis plans, plots, presentations, design comparisons, calculation plans, reproducible code, repository workflows, disclosure drafts, patent-support packets, and research roadmaps.
+description: Research, write, code, analyze, present, and develop proposals for thermal-fluid mechanical engineering work with source-aware rigor. Use for heat transfer, fluid mechanics, thermodynamics, HVAC, energy systems, turbomachinery, pumps, piping, CFD, experiments, correlations, standards, datasheets, papers, patents, AI/ML tools, computer vision, sequence regression, surrogate modeling, research coding, Overleaf, VS Code, GitHub, git, federal grant proposals, DOE/NSF/NASA-style narratives, invention disclosure, provisional patent support, commercialization, and trade studies. Produces technical briefs, critical literature reviews, proposal narratives, review-criteria responses, manuscript sections, methods, results discussions, data-analysis plans, plots, presentations, design comparisons, calculation plans, reproducible code, repository workflows, disclosure drafts, patent-support packets, and research roadmaps.
 ---
 
 # Mechanical Engineering Research
@@ -50,6 +50,8 @@ For a research brief, use:
 
 For a literature review, read `references/literature-review.md`. Group sources by mechanism, method, design family, or unresolved question rather than listing papers chronologically.
 
+For federal research proposals, DOE EPSCoR/National Laboratory partnership proposals, full narrative expansions, review-criteria responses, or ready-to-submit proposal polishing, read `references/proposal-development.md`.
+
 For a design comparison, include a compact decision matrix and explain the dominant physics behind each score.
 
 For manuscript-style technical writing, read `references/technical-writing-analysis.md` before drafting or revising introductions, methods, modeling sections, results/discussion, data analysis, or plot narratives.
@@ -98,6 +100,8 @@ Read `references/brief-template.md` when the user asks for a reusable research b
 Read `references/technical-writing-analysis.md` when the user asks for technical writing, manuscript sections, data analysis, figures, plots, or results discussion.
 
 Read `references/literature-review.md` when the user asks for a literature review, related-work section, research background, citation map, state-of-the-art comparison, review figure/table, future-work analysis, or paper discovery strategy.
+
+Read `references/proposal-development.md` when the user asks for grant/proposal development, solicitation alignment, pre-application expansion, DOE EPSCoR or National Lab partnership narratives, collaborator document planning, review-criteria mapping, milestones, preliminary-results integration, proposal figures, references, or ready-to-submit polish.
 
 Read `references/presentation-slides.md` when the user asks for presentation slides, a research talk, conference talk, group-meeting slides, slide-by-slide narrative, speaker notes, animation/video suggestions, or figure-focused storytelling.
 
