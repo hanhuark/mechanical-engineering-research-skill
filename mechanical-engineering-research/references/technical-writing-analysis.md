@@ -24,6 +24,8 @@ Use this order unless the target venue or user request calls for a different str
 
 Do not write "no prior work has been done on X" as the novelty claim. Lack of prior work does not prove importance. Instead, explain the challenge that limited prior work and how the proposed work overcomes that challenge.
 
+For background references in introductions, cite by category. Acknowledge broad bodies of work compactly, using category-specific citation groups rather than one sentence per paper or one undifferentiated citation range. For key papers that need prose discussion, use first-author-last-name plus "et al." and avoid long author lists.
+
 ## Experimental Methodology
 
 Provide enough detail that a technically competent reader can reproduce or audit the work.

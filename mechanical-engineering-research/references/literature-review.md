@@ -85,6 +85,74 @@ Avoid writing "to the best of our knowledge, no literature has been published on
 - Is the barrier measurement difficulty, fabrication difficulty, coupled physics, lack of theory, cost, throughput, scale-up, or missing diagnostics?
 - How does the proposed work overcome that barrier?
 
+## Citation And Synthesis Style
+
+Use professional manuscript citation style.
+
+- Refer to papers by the first author's last name followed by "et al." when the sentence names the authors, such as "Rahman et al. demonstrated..." Do not write long author lists such as "Author 1, Author 2, Author 3, and Author 4..." in the prose.
+- Avoid vague phrasing such as "Author and collaborators" unless the exact paper or group relationship matters.
+- Use citation placeholders or the user's citation format consistently, such as `Rahman et al. [12]` or `Rahman et al. (2014)`, depending on the manuscript style.
+- Check that the named first author matches the actual first author of the cited paper.
+
+Write compact synthesis instead of redundant two-sentence summaries.
+
+- Avoid this pattern: "Rahman et al. studied X. Their results show Y."
+- Prefer a single purposeful sentence when possible: "Rahman et al. used X to demonstrate Y."
+- Use two sentences only when the method and conclusion each need emphasis, or when a limitation, contrast, or mechanism must be developed.
+
+For each cited paper or group of papers, decide whether it is:
+
+- A key reference that deserves discussion of method, result, mechanism, and limitation.
+- A background reference that only needs acknowledgment within a category.
+- A comparison reference used to position the user's data, model, or method.
+
+Do not give every background reference a full sentence. Doing so makes the review read like an annotated bibliography instead of a synthesis.
+
+## Background Reference Grouping
+
+Background references should be acknowledged efficiently and accurately.
+
+When many studies belong to different categories, group citations by category rather than bundling all references at the end of one broad sentence.
+
+Good pattern:
+
+```text
+Textured boiling surfaces have been developed in many forms, including micropillar arrays [15-21], re-entrant cavities [1,22,23], ordered porous structures [24-27], disordered microporous coatings [28-31], nanowires [32-36], and hierarchical multiscale structures [20,37-56].
+```
+
+This structure is better than either:
+
+- writing one sentence for every background paper, which is too slow and redundant; or
+- placing one large citation range at the end of the sentence, which hides the fact that the papers belong to different technical categories.
+
+Use category-level background citations when:
+
+- the purpose is to acknowledge the breadth of prior work;
+- the individual papers are not central to the current argument; or
+- the review is setting up a transition to the few papers that matter most.
+
+After category-level citations, select only the most relevant papers for deeper discussion.
+
+## Group Review To Gap Transition
+
+After reviewing a group of references, explicitly state the limitation, unresolved issue, or knowledge gap that motivates the present work.
+
+Use this logic:
+
+1. Summarize the research category or theory.
+2. Cite representative references in the right categories.
+3. State what the group of studies has established.
+4. State what remains unclear, limited, contradictory, difficult to measure, or insufficiently modeled.
+5. Explain how that limitation motivates the present study.
+
+Example pattern:
+
+```text
+Prior studies have shown that structured surfaces can enhance boiling performance through increased nucleation density, capillary liquid supply, and modified liquid-vapor interfacial dynamics [category-specific citations]. However, the relative contribution of these mechanisms remains difficult to isolate because most measurements observe the apparent interface rather than liquid replenishment within the structures. This limitation motivates the present use of multimodal diagnostics to connect surface wickability with boiling behavior.
+```
+
+Do not end a paragraph after only summarizing prior work. The paragraph should usually end by pointing to a limitation, gap, challenge, implication, or transition.
+
 ## Review Figures, Tables, And Charts
 
 Use figures, charts, and tables as analysis tools.
