@@ -9,6 +9,17 @@ description: Research, write, code, analyze, present, and develop proposals for 
 
 Use this skill to research thermal-fluid systems with engineering rigor: define the question, collect reliable sources, preserve assumptions and validity ranges, and separate verified evidence from inference.
 
+## Workflow Coordination
+
+For full paper, proposal, review-article, thesis chapter, or major manuscript workflows, use an academic-research workflow as the scaffold when one is available, and use this skill as the thermal-fluid/mechanical-engineering judgment layer.
+
+Treat the roles as:
+
+- **Academic research workflow**: organize the process, checkpoints, outline, drafting sequence, review/revision loop, citation/claim checks, and finalization.
+- **Mechanical engineering research skill**: enforce domain logic, physical reasoning, literature synthesis standards, methodology detail, assumptions, data-analysis rigor, figure discussion, plotting, presentation quality, AI/ML interpretation, reproducible coding, and proposal-specific technical judgment.
+
+When both are available, do not let a generic academic workflow overwrite domain judgment. Apply this skill whenever deciding whether the research question, gap, method, DOE, model assumptions, interpretation, figure narrative, or proposal significance is mechanically and thermally sound.
+
 ## Research Workflow
 
 1. Clarify the engineering objective.
