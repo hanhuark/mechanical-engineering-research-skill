@@ -1,14 +1,15 @@
-# Mechanical Engineering Research Skill
+# Thermal-Fluid Research Workflow Plugin
 
-**A Codex skill for thermal-fluid mechanical engineering research, proposal development, technical writing, data analysis, presentations, and AI-assisted workflows.**
+**A Codex plugin for thermal-fluid mechanical engineering research, proposal development, technical writing, data analysis, research coding, presentations, and AI-assisted workflows.**
 
-Reusable research guidance for heat transfer, fluid mechanics, boiling, CFD, experiments, literature review, federal proposal development, manuscript writing, plotting, presentation design, and machine learning tools for mechanical engineers.
+This repository packages the `mechanical-engineering-research` skill as a lightweight workflow plugin. The skill remains the domain judgment layer; the plugin adds a cleaner install target and reusable workflow prompts for common research tasks.
 
-**Works with:** OpenAI Codex skills
+**Works with:** OpenAI Codex plugins and skills
 
-[![Skill](https://img.shields.io/badge/Codex-Skill-blue?style=for-the-badge)](mechanical-engineering-research/SKILL.md)
+[![Plugin](https://img.shields.io/badge/Codex-Plugin-blue?style=for-the-badge)](.codex-plugin/plugin.json)
+[![Skill](https://img.shields.io/badge/Codex-Skill-teal?style=for-the-badge)](skills/mechanical-engineering-research/SKILL.md)
 [![Domain](https://img.shields.io/badge/Domain-Thermal--Fluids-orange?style=for-the-badge)](#capabilities)
-[![Validation](https://img.shields.io/badge/Skill-Validated-brightgreen?style=for-the-badge)](#validation)
+[![Validation](https://img.shields.io/badge/Plugin-Validated-brightgreen?style=for-the-badge)](#validation)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/hanhuark/mechanical-engineering-research-skill?style=for-the-badge)](https://github.com/hanhuark/mechanical-engineering-research-skill/stargazers)
 
@@ -16,15 +17,20 @@ Reusable research guidance for heat transfer, fluid mechanics, boiling, CFD, exp
 
 ## What Is This?
 
-This repository publishes a single Codex skill: `mechanical-engineering-research`.
+This repository is now a plugin-style distribution for a single canonical skill:
 
-Codex skills are modular instruction packages that give an AI coding/research agent specialized workflows and reference knowledge. This skill helps Codex behave like a stronger thermal-fluid research assistant: more source-aware, more critical, more careful with assumptions, and better aligned with graduate-level research practice.
+```text
+skills/mechanical-engineering-research/
+```
 
-Each skill includes:
+The plugin is designed around a simple principle:
 
-- **`SKILL.md`**: routing instructions, research workflow, and when to load each reference
-- **Reference docs**: detailed guidance for literature review, technical writing, data analysis, presentations, and AI/ML tools
-- **Agent metadata**: Codex UI metadata in `agents/openai.yaml`
+```text
+academic research workflow = process scaffold
+mechanical-engineering-research = thermal-fluid domain judgment layer
+```
+
+Use it to help Codex reason more carefully about thermal-fluid research: source quality, physical assumptions, literature synthesis, methodology detail, data-analysis logic, figure discussion, proposal significance, reproducible code, and AI/ML tools connected back to physics.
 
 ---
 
@@ -32,21 +38,27 @@ Each skill includes:
 
 ### From Codex Chat
 
-Ask Codex to install the skill from this GitHub path:
+Ask Codex to install the plugin from GitHub:
 
 ```text
-Install the Codex skill from GitHub repo hanhuark/mechanical-engineering-research-skill, path mechanical-engineering-research.
+Install the Codex plugin from https://github.com/hanhuark/mechanical-engineering-research-skill
 ```
 
-or provide the full GitHub URL:
+If your Codex environment does not yet support community plugin installation from a GitHub repo, install the skill folder directly:
 
 ```text
-Install the Codex skill from https://github.com/hanhuark/mechanical-engineering-research-skill/tree/main/mechanical-engineering-research
+Install the Codex skill from GitHub repo hanhuark/mechanical-engineering-research-skill, path skills/mechanical-engineering-research.
 ```
 
-Do not ask Codex to install only `mechanical-engineering-research-skill` by name. That is the repository name, not a curated Codex skill name. Codex's built-in installer recognizes curated skill names automatically, but community skills should be installed from a GitHub repo/path or URL.
+or:
 
-### OpenAI Codex
+```text
+Install the Codex skill from https://github.com/hanhuark/mechanical-engineering-research-skill/tree/main/skills/mechanical-engineering-research
+```
+
+Do not ask Codex to install only `mechanical-engineering-research-skill` as a curated skill name. That is the repository name, not a curated Codex skill name.
+
+### Manual Skill Installation
 
 Clone the repository:
 
@@ -58,65 +70,73 @@ cd mechanical-engineering-research-skill
 Copy the skill into your Codex skills directory:
 
 ```powershell
-Copy-Item -Recurse .\mechanical-engineering-research "$env:USERPROFILE\.codex\skills\mechanical-engineering-research" -Force
+Copy-Item -Recurse .\skills\mechanical-engineering-research "$env:USERPROFILE\.codex\skills\mechanical-engineering-research" -Force
 ```
 
 Restart Codex if the skill is not discovered immediately.
-
-### Manual Installation
-
-Copy this folder:
-
-```text
-mechanical-engineering-research/
-```
-
-into:
-
-```text
-~/.codex/skills/
-```
-
-On Windows, that is usually:
-
-```text
-C:\Users\<you>\.codex\skills\
-```
 
 ---
 
 ## Capabilities
 
-| Area | What The Skill Helps With | Reference |
+| Area | What The Plugin Helps With | Reference |
 |---|---|---|
-| Research workflow | Source-aware thermal-fluid research, assumptions, correlations, trade studies, validation | [`SKILL.md`](mechanical-engineering-research/SKILL.md) |
-| Literature review | Critical review, seminal-work tracing, citation past/future, review figures, benchmark tables | [`literature-review.md`](mechanical-engineering-research/references/literature-review.md) |
-| Technical writing | Introduction logic, methodology detail, modeling assumptions, results discussion | [`technical-writing-analysis.md`](mechanical-engineering-research/references/technical-writing-analysis.md) |
-| Proposal development | DOE/NSF/NASA-style proposal narratives, solicitation alignment, review criteria, preliminary results, milestones | [`proposal-development.md`](mechanical-engineering-research/references/proposal-development.md) |
-| Data analysis | Baseline case analysis, hypothesis-driven DOE, plotting, figure interpretation | [`technical-writing-analysis.md`](mechanical-engineering-research/references/technical-writing-analysis.md) |
-| Research coding | Reproducible scripts, notebooks, data pipelines, plotting code, simulation automation, code review | [`research-coding.md`](mechanical-engineering-research/references/research-coding.md) |
-| Presentations | Slide logic, graphics-first storytelling, speaker notes, videos/animations, backup slides | [`presentation-slides.md`](mechanical-engineering-research/references/presentation-slides.md) |
-| AI/ML tools | BubbleID, SeqReg, CFDTwin, DataDroid-LAM, sensor fusion, surrogate modeling | [`ai-tools-thermal-fluids.md`](mechanical-engineering-research/references/ai-tools-thermal-fluids.md) |
-| Briefs | Concise research brief structure for decision-ready engineering summaries | [`brief-template.md`](mechanical-engineering-research/references/brief-template.md) |
+| Research workflow | Source-aware thermal-fluid research, assumptions, correlations, trade studies, validation | [`SKILL.md`](skills/mechanical-engineering-research/SKILL.md) |
+| Literature review | Critical review, seminal-work tracing, citation past/future, review figures, benchmark tables | [`literature-review.md`](skills/mechanical-engineering-research/references/literature-review.md) |
+| Technical writing | Introduction logic, methodology detail, modeling assumptions, results discussion | [`technical-writing-analysis.md`](skills/mechanical-engineering-research/references/technical-writing-analysis.md) |
+| Proposal development | DOE/NSF/NASA-style proposal narratives, solicitation alignment, review criteria, preliminary results, milestones | [`proposal-development.md`](skills/mechanical-engineering-research/references/proposal-development.md) |
+| Data analysis | Baseline case analysis, hypothesis-driven DOE, plotting, figure interpretation | [`technical-writing-analysis.md`](skills/mechanical-engineering-research/references/technical-writing-analysis.md) |
+| Research coding | Reproducible scripts, notebooks, data pipelines, plotting code, simulation automation, code review | [`research-coding.md`](skills/mechanical-engineering-research/references/research-coding.md) |
+| Presentations | Slide logic, graphics-first storytelling, speaker notes, videos/animations, backup slides | [`presentation-slides.md`](skills/mechanical-engineering-research/references/presentation-slides.md) |
+| AI/ML tools | BubbleID, SeqReg, CFDTwin, DataDroid-LAM, sensor fusion, surrogate modeling | [`ai-tools-thermal-fluids.md`](skills/mechanical-engineering-research/references/ai-tools-thermal-fluids.md) |
+| Toolchain | Overleaf, VS Code, GitHub, git, releases, archival workflow, reproducibility hygiene | [`research-toolchain.md`](skills/mechanical-engineering-research/references/research-toolchain.md) |
+| Innovation | Invention disclosure, patent-support packets, commercialization briefs, non-confidential summaries | [`innovation-commercialization.md`](skills/mechanical-engineering-research/references/innovation-commercialization.md) |
+| Briefs | Concise research brief structure for decision-ready engineering summaries | [`brief-template.md`](skills/mechanical-engineering-research/references/brief-template.md) |
 
 ---
 
-## Skill Structure
+## Plugin Structure
 
 ```text
-mechanical-engineering-research/
-  SKILL.md
-  agents/
-    openai.yaml
-  references/
-    ai-tools-thermal-fluids.md
-    brief-template.md
-    literature-review.md
-    presentation-slides.md
-    proposal-development.md
-    research-coding.md
-    technical-writing-analysis.md
+mechanical-engineering-research-skill/
+  .codex-plugin/
+    plugin.json
+  commands/
+    me-build-slides.md
+    me-code-review.md
+    me-data-analysis.md
+    me-lit-review.md
+    me-write-section.md
+  skills/
+    mechanical-engineering-research/
+      SKILL.md
+      agents/
+        openai.yaml
+      references/
+        ai-tools-thermal-fluids.md
+        brief-template.md
+        innovation-commercialization.md
+        literature-review.md
+        presentation-slides.md
+        proposal-development.md
+        research-coding.md
+        research-toolchain.md
+        technical-writing-analysis.md
 ```
+
+---
+
+## Workflow Prompts
+
+The `commands/` folder contains reusable workflow prompts that can be copied into Codex or adapted into future slash commands:
+
+| Prompt | Use |
+|---|---|
+| [`me-lit-review.md`](commands/me-lit-review.md) | Critical literature review and gap synthesis |
+| [`me-write-section.md`](commands/me-write-section.md) | Manuscript, proposal, report, or thesis-section drafting |
+| [`me-data-analysis.md`](commands/me-data-analysis.md) | Baseline-first analysis and hypothesis-driven DOE |
+| [`me-build-slides.md`](commands/me-build-slides.md) | Graphics-first research presentations |
+| [`me-code-review.md`](commands/me-code-review.md) | Reproducible research code review and refactoring |
 
 ---
 
@@ -178,43 +198,56 @@ git pull
 Edit files under:
 
 ```text
-mechanical-engineering-research/
+skills/mechanical-engineering-research/
 ```
 
 Validate the skill:
 
 ```powershell
-python "$env:USERPROFILE\.codex\skills\.system\skill-creator\scripts\quick_validate.py" ".\mechanical-engineering-research"
+python "$env:USERPROFILE\.codex\skills\.system\skill-creator\scripts\quick_validate.py" ".\skills\mechanical-engineering-research"
+```
+
+Validate the plugin:
+
+```powershell
+python "$env:USERPROFILE\.codex\skills\.system\plugin-creator\scripts\validate_plugin.py" "."
 ```
 
 Commit and push:
 
 ```powershell
-git add mechanical-engineering-research README.md CONTRIBUTING.md
-git commit -m "Improve research skill guidance"
+git add .codex-plugin commands skills README.md CONTRIBUTING.md
+git commit -m "Improve thermal-fluid research workflow plugin"
 git push
 ```
 
-Copy the updated skill into your local Codex skills directory when you want to use the latest version:
+Copy the updated skill into your local Codex skills directory when you want to use the latest skill version directly:
 
 ```powershell
-Copy-Item -Recurse .\mechanical-engineering-research "$env:USERPROFILE\.codex\skills\mechanical-engineering-research" -Force
+Copy-Item -Recurse .\skills\mechanical-engineering-research "$env:USERPROFILE\.codex\skills\mechanical-engineering-research" -Force
 ```
 
 ---
 
 ## Validation
 
-This skill was validated with Codex's skill validator:
+Validate the skill:
 
 ```powershell
-python "$env:USERPROFILE\.codex\skills\.system\skill-creator\scripts\quick_validate.py" ".\mechanical-engineering-research"
+python "$env:USERPROFILE\.codex\skills\.system\skill-creator\scripts\quick_validate.py" ".\skills\mechanical-engineering-research"
+```
+
+Validate the plugin:
+
+```powershell
+python "$env:USERPROFILE\.codex\skills\.system\plugin-creator\scripts\validate_plugin.py" "."
 ```
 
 Expected result:
 
 ```text
 Skill is valid!
+Plugin is valid!
 ```
 
 ---
@@ -235,25 +268,25 @@ The AI/ML guidance references several thermal-fluid and mechanical-engineering t
 
 ## FAQ
 
-**Is this a general mechanical engineering skill?**
+**Is this still a Codex skill?**
 
-It is focused on thermal-fluid research, but many workflows also help with broader mechanical engineering research, technical writing, data analysis, and presentations.
+Yes. The canonical skill now lives at [`skills/mechanical-engineering-research`](skills/mechanical-engineering-research/). The plugin wraps it with metadata and workflow prompts.
 
-**Does the skill replace reading papers or doing experiments?**
+**Why convert it to a plugin?**
 
-No. The skill explicitly treats literature review, doing, and communication as integrated. It should help plan, analyze, synthesize, and write research more effectively.
+The plugin form gives the project a clearer install target, room for workflow prompts, and a path toward future commands, scripts, assets, or additional skills.
+
+**Does the plugin replace academic-research workflow tools?**
+
+No. For full papers and proposals, use academic-research workflow tools as the process scaffold when available. Use this plugin as the thermal-fluid/mechanical-engineering judgment layer.
 
 **Can I use this with Claude Code, Cursor, or other agents?**
 
-The repository is authored as a Codex skill using `SKILL.md`. Other agents may be able to reuse the markdown guidance manually, but no conversion scripts are included yet.
+The core skill is markdown-based and can be adapted manually. The plugin metadata here is Codex-oriented.
 
 **How should I contribute improvements?**
 
 Add reusable guidance, not one-off facts. Keep `SKILL.md` concise and put detailed workflows in `references/`. See [`CONTRIBUTING.md`](CONTRIBUTING.md).
-
-**Will updates break my local skill?**
-
-The skill is intentionally simple: one folder with markdown references. Pull updates, validate, and copy the folder into `~/.codex/skills/`.
 
 ---
 
@@ -263,6 +296,7 @@ Contributions are welcome. Good contributions improve reusable research practice
 
 - clearer thermal-fluid research workflows
 - stronger literature-review synthesis methods
+- proposal development and review-criteria guidance
 - technical writing and results-discussion guidance
 - data-analysis, plotting, and DOE practices
 - reproducible research coding practices
