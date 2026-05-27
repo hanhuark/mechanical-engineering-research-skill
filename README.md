@@ -83,6 +83,7 @@ Restart Codex if the skill is not discovered immediately.
 |---|---|---|
 | Research workflow | Source-aware thermal-fluid research, assumptions, correlations, trade studies, validation | [`SKILL.md`](skills/mechanical-engineering-research/SKILL.md) |
 | Literature review | Critical review, seminal-work tracing, citation past/future, review figures, benchmark tables | [`literature-review.md`](skills/mechanical-engineering-research/references/literature-review.md) |
+| Paper writing style | Preferred journal-paper structure, abstract pattern, figure-led results, conclusions, AI/ML paper style | [`paper-writing-style.md`](skills/mechanical-engineering-research/references/paper-writing-style.md) |
 | Technical writing | Introduction logic, methodology detail, modeling assumptions, results discussion | [`technical-writing-analysis.md`](skills/mechanical-engineering-research/references/technical-writing-analysis.md) |
 | Proposal development | DOE/NSF/NASA-style proposal narratives, solicitation alignment, review criteria, preliminary results, milestones | [`proposal-development.md`](skills/mechanical-engineering-research/references/proposal-development.md) |
 | Data analysis | Baseline case analysis, hypothesis-driven DOE, plotting, figure interpretation | [`technical-writing-analysis.md`](skills/mechanical-engineering-research/references/technical-writing-analysis.md) |
@@ -117,6 +118,7 @@ mechanical-engineering-research-skill/
         brief-template.md
         innovation-commercialization.md
         literature-review.md
+        paper-writing-style.md
         presentation-slides.md
         proposal-development.md
         research-coding.md

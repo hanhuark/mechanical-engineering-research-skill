@@ -67,6 +67,8 @@ For a design comparison, include a compact decision matrix and explain the domin
 
 For manuscript-style technical writing, read `references/technical-writing-analysis.md` before drafting or revising introductions, methods, modeling sections, results/discussion, data analysis, or plot narratives.
 
+For full technical papers, journal manuscripts, or paper-style section drafting, also read `references/paper-writing-style.md` to match the preferred section logic, abstract style, figure-led results, and conclusion patterns.
+
 For experiments, simulations, or parameter studies, use `references/technical-writing-analysis.md` to plan a detailed baseline case and hypothesis-driven DOE before proposing broad sweeps or large case matrices.
 
 For research presentations or slide decks, read `references/presentation-slides.md` before creating slide outlines, slide content, speaker notes, or visual-story plans.
@@ -109,6 +111,8 @@ When discussing experiments:
 Read `references/brief-template.md` when the user asks for a reusable research brief format, report outline, or deliverable template.
 
 Read `references/technical-writing-analysis.md` when the user asks for technical writing, manuscript sections, data analysis, figures, plots, or results discussion.
+
+Read `references/paper-writing-style.md` when the user asks to write, revise, outline, or polish a journal paper, conference paper, manuscript, abstract, introduction, methods, results/discussion, conclusion, or paper-style technical narrative.
 
 Read `references/literature-review.md` when the user asks for a literature review, related-work section, research background, citation map, state-of-the-art comparison, review figure/table, future-work analysis, or paper discovery strategy.
 
