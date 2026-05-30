@@ -1,3 +1,7 @@
+---
+description: Develop a critical thermal-fluid or mechanical-engineering literature review with mechanism-based synthesis, citation grouping, and gap identification.
+---
+
 # Thermal-Fluid Literature Review
 
 Use `mechanical-engineering-research` to produce a critical literature review for a thermal-fluid or mechanical engineering topic.

@@ -1,3 +1,7 @@
+---
+description: Draft or revise thermal-fluid manuscript, proposal, report, or thesis sections with clear paragraph logic, methods detail, assumptions, and figure-led discussion.
+---
+
 # Thermal-Fluid Technical Writing
 
 Use `mechanical-engineering-research` to draft or revise a manuscript, proposal, report, or thesis section.

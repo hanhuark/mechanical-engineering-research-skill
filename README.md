@@ -1,12 +1,13 @@
 # Thermal-Fluid Research Workflow Plugin
 
-**A Codex plugin for thermal-fluid mechanical engineering research, proposal development, technical writing, data analysis, research coding, presentations, and AI-assisted workflows.**
+**A cross-agent research workflow plugin for thermal-fluid mechanical engineering research, proposal development, technical writing, data analysis, research coding, presentations, and AI-assisted workflows.**
 
-This repository packages the `mechanical-engineering-research` skill as a lightweight workflow plugin. The skill remains the domain judgment layer; the plugin adds a cleaner install target and reusable workflow prompts for common research tasks.
+This repository packages the `mechanical-engineering-research` skill as a lightweight workflow plugin. The skill remains the domain judgment layer; the plugin adds cleaner install targets and reusable workflow prompts for common research tasks.
 
-**Works with:** OpenAI Codex plugins and skills
+**Works with:** OpenAI Codex plugins/skills and Claude Code plugins/skills
 
 [![Plugin](https://img.shields.io/badge/Codex-Plugin-blue?style=for-the-badge)](.codex-plugin/plugin.json)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-Plugin-purple?style=for-the-badge)](.claude-plugin/plugin.json)
 [![Skill](https://img.shields.io/badge/Codex-Skill-teal?style=for-the-badge)](skills/mechanical-engineering-research/SKILL.md)
 [![Domain](https://img.shields.io/badge/Domain-Thermal--Fluids-orange?style=for-the-badge)](#capabilities)
 [![Validation](https://img.shields.io/badge/Plugin-Validated-brightgreen?style=for-the-badge)](#validation)
@@ -36,7 +37,7 @@ Use it to help Codex reason more carefully about thermal-fluid research: source 
 
 ## Quick Install
 
-### From Codex Chat
+### OpenAI Codex
 
 Ask Codex to install the plugin from GitHub:
 
@@ -75,6 +76,36 @@ Copy-Item -Recurse .\skills\mechanical-engineering-research "$env:USERPROFILE\.c
 
 Restart Codex if the skill is not discovered immediately.
 
+### Claude Code
+
+Claude Code can use the same repository as a plugin because it includes:
+
+```text
+.claude-plugin/plugin.json
+skills/mechanical-engineering-research/SKILL.md
+commands/*.md
+```
+
+For local testing, clone the repository and launch Claude Code with the plugin directory:
+
+```bash
+git clone https://github.com/hanhuark/mechanical-engineering-research-skill.git
+claude --plugin-dir ./mechanical-engineering-research-skill
+```
+
+Then invoke the skill or workflow prompts through the plugin namespace:
+
+```text
+/thermal-fluid-research-workflow:mechanical-engineering-research
+/thermal-fluid-research-workflow:me-lit-review
+/thermal-fluid-research-workflow:me-write-section
+/thermal-fluid-research-workflow:me-data-analysis
+/thermal-fluid-research-workflow:me-build-slides
+/thermal-fluid-research-workflow:me-code-review
+```
+
+Claude Code should also discover the skill automatically when a task involves thermal-fluid research, mechanical-engineering literature review, manuscript writing, proposal development, research coding, plotting, or presentation planning.
+
 ---
 
 ## Capabilities
@@ -101,6 +132,8 @@ Restart Codex if the skill is not discovered immediately.
 ```text
 mechanical-engineering-research-skill/
   .codex-plugin/
+    plugin.json
+  .claude-plugin/
     plugin.json
   commands/
     me-build-slides.md
@@ -134,11 +167,11 @@ The `commands/` folder contains reusable workflow prompts that can be copied int
 
 | Prompt | Use |
 |---|---|
-| [`me-lit-review.md`](commands/me-lit-review.md) | Critical literature review and gap synthesis |
-| [`me-write-section.md`](commands/me-write-section.md) | Manuscript, proposal, report, or thesis-section drafting |
-| [`me-data-analysis.md`](commands/me-data-analysis.md) | Baseline-first analysis and hypothesis-driven DOE |
-| [`me-build-slides.md`](commands/me-build-slides.md) | Graphics-first research presentations |
-| [`me-code-review.md`](commands/me-code-review.md) | Reproducible research code review and refactoring |
+| [`me-lit-review.md`](commands/me-lit-review.md) | Critical literature review and gap synthesis; Claude command `/thermal-fluid-research-workflow:me-lit-review` |
+| [`me-write-section.md`](commands/me-write-section.md) | Manuscript, proposal, report, or thesis-section drafting; Claude command `/thermal-fluid-research-workflow:me-write-section` |
+| [`me-data-analysis.md`](commands/me-data-analysis.md) | Baseline-first analysis and hypothesis-driven DOE; Claude command `/thermal-fluid-research-workflow:me-data-analysis` |
+| [`me-build-slides.md`](commands/me-build-slides.md) | Graphics-first research presentations; Claude command `/thermal-fluid-research-workflow:me-build-slides` |
+| [`me-code-review.md`](commands/me-code-review.md) | Reproducible research code review and refactoring; Claude command `/thermal-fluid-research-workflow:me-code-review` |
 
 ---
 
@@ -218,7 +251,7 @@ python "$env:USERPROFILE\.codex\skills\.system\plugin-creator\scripts\validate_p
 Commit and push:
 
 ```powershell
-git add .codex-plugin commands skills README.md CONTRIBUTING.md
+git add .codex-plugin .claude-plugin commands skills README.md CONTRIBUTING.md
 git commit -m "Improve thermal-fluid research workflow plugin"
 git push
 ```
@@ -284,7 +317,7 @@ No. For full papers and proposals, use academic-research workflow tools as the p
 
 **Can I use this with Claude Code, Cursor, or other agents?**
 
-The core skill is markdown-based and can be adapted manually. The plugin metadata here is Codex-oriented.
+Yes for Claude Code. This repository includes `.claude-plugin/plugin.json` and the standard `skills/<skill-name>/SKILL.md` structure. Claude Code users can load it with `claude --plugin-dir` or install it through a compatible Claude Code marketplace if listed there. Other agents can adapt the markdown skill manually.
 
 **How should I contribute improvements?**
 

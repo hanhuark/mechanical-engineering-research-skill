@@ -1,3 +1,7 @@
+---
+description: Review or refactor thermal-fluid research code for reproducibility, baseline-case traceability, units, assumptions, physics checks, and publication figures.
+---
+
 # Thermal-Fluid Research Code Review
 
 Use `mechanical-engineering-research` to write, review, or refactor research code.

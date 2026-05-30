@@ -1,3 +1,7 @@
+---
+description: Plan thermal-fluid experimental, simulation, CFD, or AI-assisted data analysis around a baseline case, hypothesis-driven DOE, plotting, and validation checks.
+---
+
 # Thermal-Fluid Data Analysis
 
 Use `mechanical-engineering-research` to plan or implement experimental, simulation, CFD, or AI-assisted data analysis.

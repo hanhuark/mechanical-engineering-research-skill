@@ -1,3 +1,7 @@
+---
+description: Build a graphics-first thermal-fluid research presentation with slide-to-slide logic, visual plans, speaker notes, and backup-slide structure.
+---
+
 # Thermal-Fluid Research Presentation
 
 Use `mechanical-engineering-research` to build a graphics-first research presentation.
