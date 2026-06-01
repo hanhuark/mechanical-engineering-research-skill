@@ -5,3 +5,4 @@ Thumbs.db
 __pycache__/
 .pytest_cache/
 .tmp-proposal-analysis/
+.tmp-presentation-analysis/
