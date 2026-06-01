@@ -4,3 +4,4 @@ Thumbs.db
 *.bak
 __pycache__/
 .pytest_cache/
+.tmp-proposal-analysis/
