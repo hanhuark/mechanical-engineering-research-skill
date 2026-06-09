@@ -1,23 +1,23 @@
 %%{init: {"theme": "base", "themeVariables": {"fontFamily": "Inter, Segoe UI, Arial, sans-serif", "primaryColor": "#ecfeff", "primaryTextColor": "#0f172a", "primaryBorderColor": "#0f766e", "lineColor": "#475569", "secondaryColor": "#fff7ed", "tertiaryColor": "#f8fafc", "clusterBkg": "#ffffff", "clusterBorder": "#cbd5e1", "edgeLabelBackground": "#ffffff"}}}%%
 flowchart TB
-    A["Researcher or agent request<br/>paper, proposal, CFD, experiment, data, code, or slides"]:::input
-    B["Thermal-Fluid Research Workflow Plugin<br/>routes the task and loads the right reference guidance"]:::core
+    A["Research Request"]:::input
+    B["Plugin Router"]:::core
 
-    C["Academic research workflow<br/>outline, checkpoints, citation flow, review and revision loop"]:::scaffold
-    D["Mechanical-engineering judgment layer<br/>physics, assumptions, validity ranges, mechanisms, and engineering tradeoffs"]:::core
+    C["Academic Scaffold"]:::scaffold
+    D["ME Judgment Layer"]:::core
 
     A --> B
-    C -. "process scaffold" .-> B
+    C -. "process" .-> B
     B --> D
 
-    D --> E{"Choose the work mode"}:::gate
+    D --> E{"Mode"}:::gate
 
-    E --> F1["Literature review<br/>mechanism map, source hierarchy, gaps, benchmark tables"]:::lane
-    E --> F2["Analysis and DOE<br/>baseline case, parameter logic, plots, uncertainty"]:::lane
-    E --> F3["CFD and experiments<br/>boundary conditions, mesh, sensors, calibration, validation"]:::lane
-    E --> F4["Writing and proposals<br/>methods, results discussion, aims, reviewer criteria"]:::lane
-    E --> F5["Research code and AI/ML<br/>reproducible pipeline, leakage checks, physics sanity tests"]:::lane
-    E --> F6["Slides and innovation<br/>visual story, impact, disclosure, commercialization notes"]:::lane
+    E --> F1["Literature Map"]:::lane
+    E --> F2["Analysis + DOE"]:::lane
+    E --> F3["CFD + Tests"]:::lane
+    E --> F4["Writing + Proposals"]:::lane
+    E --> F5["Code + AI/ML"]:::lane
+    E --> F6["Slides + IP"]:::lane
 
     F1 --> G
     F2 --> G
@@ -26,9 +26,9 @@ flowchart TB
     F5 --> G
     F6 --> G
 
-    G["Thermal-fluid rigor gate<br/>regime | correlations | properties | scaling | validation | safety | standards"]:::gate
-    H["Decision-ready output<br/>assumptions, evidence, equations, tradeoffs, gaps, and next verification steps"]:::output
-    I["Reusable artifact<br/>brief, literature matrix, manuscript section, proposal narrative, code review, or slide outline"]:::artifact
+    G["Rigor Gate"]:::gate
+    H["Decision Output"]:::output
+    I["Reusable Artifact"]:::artifact
 
     G --> H --> I
 

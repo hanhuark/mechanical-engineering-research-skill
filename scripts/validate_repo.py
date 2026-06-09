@@ -135,7 +135,7 @@ def validate_docs() -> None:
         require_file(required)
 
     workflow = require_file("assets/workflow.mmd").read_text(encoding="utf-8")
-    if "flowchart TB" not in workflow or "Thermal-fluid rigor gate" not in workflow:
+    if "flowchart TB" not in workflow or "Rigor Gate" not in workflow:
         fail("workflow.mmd does not contain expected workflow diagram")
 
 
