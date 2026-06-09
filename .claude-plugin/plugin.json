@@ -1,7 +1,7 @@
 {
   "name": "thermal-fluid-research-workflow",
-  "description": "Thermal-fluid mechanical engineering research workflow for literature review, technical writing, data analysis, presentations, proposals, research coding, and AI/ML-assisted workflows.",
-  "version": "0.1.0",
+  "description": "Thermal-fluid mechanical engineering research workflow for CFD review, correlation checks, experiment planning, literature review, technical writing, data analysis, presentations, proposals, research coding, and AI/ML-assisted workflows.",
+  "version": "0.2.0",
   "author": {
     "name": "Han Hu",
     "email": "72934230+hanhuark@users.noreply.github.com",

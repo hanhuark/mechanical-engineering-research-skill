@@ -1,0 +1,102 @@
+[
+  {
+    "id": "correlation-out-of-range",
+    "prompt": "A user applies a turbulent internal-flow Nusselt correlation to Re = 850 in a rectangular microchannel and claims the prediction is validated because the trend looks smooth.",
+    "expected_checks": [
+      "flag Reynolds-number validity range",
+      "ask for hydraulic diameter and aspect ratio",
+      "recommend laminar or developing-flow comparison",
+      "downgrade validation claim"
+    ]
+  },
+  {
+    "id": "cfd-wall-treatment-missing",
+    "prompt": "A CFD section reports high heat-transfer enhancement from a RANS simulation but omits y+, wall functions, mesh independence, and benchmark comparison.",
+    "expected_checks": [
+      "ask for y+ and wall treatment",
+      "require mesh independence",
+      "require validation or analytical bound",
+      "separate CFD trend from evidence"
+    ]
+  },
+  {
+    "id": "boiling-ml-leakage",
+    "prompt": "A boiling-regime classifier randomly splits frames from the same videos into train and test sets and reports 99% accuracy.",
+    "expected_checks": [
+      "flag frame-level leakage",
+      "require split by video or experiment",
+      "ask for out-of-distribution surfaces or pressures",
+      "connect accuracy back to boiling physics"
+    ]
+  },
+  {
+    "id": "experiment-uncertainty-missing",
+    "prompt": "An experiment compares two heat sinks using thermocouples and a flow meter but reports no calibration, repeatability, heat-loss correction, or uncertainty propagation.",
+    "expected_checks": [
+      "request sensor calibration",
+      "request uncertainty propagation",
+      "request repeatability criteria",
+      "request heat-loss correction"
+    ]
+  },
+  {
+    "id": "pressure-drop-ignored",
+    "prompt": "A design memo selects a pin-fin cold plate only because its heat-transfer coefficient is highest, while pressure drop and pumping power are omitted.",
+    "expected_checks": [
+      "flag missing pressure drop",
+      "include pumping power",
+      "compare thermal resistance per pumping power",
+      "avoid single-metric selection"
+    ]
+  },
+  {
+    "id": "property-variation",
+    "prompt": "A thermal model assumes constant water properties over a large temperature rise and does not state the reference temperature.",
+    "expected_checks": [
+      "ask for temperature range",
+      "ask where properties are evaluated",
+      "recommend variable-property sensitivity",
+      "state when constant properties may be acceptable"
+    ]
+  },
+  {
+    "id": "developing-flow",
+    "prompt": "A manuscript compares measured Nusselt numbers against a fully developed correlation for a short heated channel with unknown entrance length.",
+    "expected_checks": [
+      "check hydrodynamic and thermal entrance lengths",
+      "ask whether flow is developing",
+      "question correlation choice",
+      "recommend appropriate developing-flow bound"
+    ]
+  },
+  {
+    "id": "proposal-vague-aims",
+    "prompt": "A proposal aim says: develop novel cooling, use AI to optimize it, and demonstrate broad impact.",
+    "expected_checks": [
+      "identify missing technical barrier",
+      "rewrite aims with hypotheses or objectives",
+      "add success metrics",
+      "add risks and alternatives"
+    ]
+  },
+  {
+    "id": "figure-overclaim",
+    "prompt": "A results paragraph says a plot proves the new surface is superior because heat-transfer coefficient increases with flow rate.",
+    "expected_checks": [
+      "explain physical mechanism",
+      "avoid proof or superiority claim",
+      "ask for uncertainty and pressure drop",
+      "compare against baseline or expected trend"
+    ]
+  },
+  {
+    "id": "standards-safety-gap",
+    "prompt": "A high-pressure refrigerant test plan lists sensors and flow rates but does not mention pressure rating, relief devices, compatible materials, or applicable standards.",
+    "expected_checks": [
+      "flag safety and standards gap",
+      "ask for pressure ratings and relief protection",
+      "ask for material compatibility",
+      "recommend applicable code or standards lookup"
+    ]
+  }
+]
