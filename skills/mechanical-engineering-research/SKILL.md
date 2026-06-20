@@ -69,6 +69,8 @@ For manuscript-style technical writing, read `references/technical-writing-analy
 
 For full technical papers, journal manuscripts, or paper-style section drafting, also read `references/paper-writing-style.md` to match the preferred section logic, abstract style, figure-led results, and conclusion patterns.
 
+When the user asks to match Han Hu's research/writing style, extract preferences from a prior workspace, prepare a review article, write about open datasets/AI tools/benchmarks, or polish a submission package, read `references/han-hu-research-style.md`.
+
 For experiments, simulations, or parameter studies, use `references/technical-writing-analysis.md` to plan a detailed baseline case and hypothesis-driven DOE before proposing broad sweeps or large case matrices.
 
 For research presentations or slide decks, read `references/presentation-slides.md` before creating slide outlines, slide content, speaker notes, or visual-story plans.
@@ -113,6 +115,8 @@ Read `references/brief-template.md` when the user asks for a reusable research b
 Read `references/technical-writing-analysis.md` when the user asks for technical writing, manuscript sections, data analysis, figures, plots, or results discussion.
 
 Read `references/paper-writing-style.md` when the user asks to write, revise, outline, or polish a journal paper, conference paper, manuscript, abstract, introduction, methods, results/discussion, conclusion, or paper-style technical narrative.
+
+Read `references/han-hu-research-style.md` when the user asks to match Han Hu's style, infer preferences from a workspace, revise a review article, discuss open datasets/software/benchmarks, prepare a submission package, or keep a manuscript aligned with the user's established research and writing habits.
 
 Read `references/literature-review.md` when the user asks for a literature review, related-work section, research background, citation map, state-of-the-art comparison, review figure/table, future-work analysis, or paper discovery strategy.
 
