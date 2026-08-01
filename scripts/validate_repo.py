@@ -78,8 +78,8 @@ def validate_eval_fixtures() -> None:
     data = load_json("tests/thermal-fluid-evals/prompt-fixtures.json")
     if not isinstance(data, list):
         fail("eval fixture file must contain a list")
-    if len(data) != 10:
-        fail("expected exactly 10 thermal-fluid eval fixtures")
+    if len(data) < 10:
+        fail("expected at least 10 thermal-fluid eval fixtures")
 
     seen = set()
     for item in data:
@@ -139,11 +139,35 @@ def validate_docs() -> None:
         fail("workflow.mmd does not contain expected workflow diagram")
 
 
+def validate_skill_resources() -> None:
+    skill = require_file("skills/mechanical-engineering-research/SKILL.md")
+    text = skill.read_text(encoding="utf-8")
+    frontmatter = text.split("---", 2)[1]
+    keys = [line.split(":", 1)[0].strip() for line in frontmatter.splitlines() if ":" in line]
+    if keys != ["name", "description"]:
+        fail("skill frontmatter must contain only name and description")
+
+    for required in [
+        "skills/mechanical-engineering-research/scripts/audit_latex_project.py",
+        "skills/mechanical-engineering-research/scripts/audit_data_manifest.py",
+        "skills/mechanical-engineering-research/assets/templates/claim-evidence-ledger.csv",
+        "skills/mechanical-engineering-research/assets/templates/symbol-unit-convention-ledger.csv",
+        "skills/mechanical-engineering-research/assets/templates/data-rights-manifest.csv",
+        "skills/mechanical-engineering-research/assets/templates/reviewer-response-matrix.csv",
+        "skills/mechanical-engineering-research/assets/templates/response-to-reviewers.md",
+        "skills/mechanical-engineering-research/assets/templates/reproducibility-manifest.json",
+        "skills/mechanical-engineering-research/assets/templates/benchmark-dataset-readme.md",
+    ]:
+        require_file(required)
+    load_json("skills/mechanical-engineering-research/assets/templates/reproducibility-manifest.json")
+
+
 def main() -> int:
     validate_docs()
     validate_manifests()
     validate_commands()
     validate_eval_fixtures()
+    validate_skill_resources()
     validate_markdown_links()
     print("Repository validation passed.")
     return 0

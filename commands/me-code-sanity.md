@@ -1,10 +1,10 @@
 ---
-description: Review thermal-fluid research code for units, baselines, reproducibility, data leakage, physics checks, plots, and result traceability.
+description: Run a fast preflight on thermal-fluid research code for units, baselines, leakage, physics checks, and result traceability.
 ---
 
 # Thermal-Fluid Code Sanity Review
 
-Use `mechanical-engineering-research` to review code used for thermal-fluid experiments, CFD post-processing, plotting, or AI/ML workflows.
+Use `mechanical-engineering-research` for a fast preflight of code used for experiments, CFD post-processing, plotting, or AI/ML workflows. Escalate to `me-code-review` when architecture, refactoring, packaging, or release readiness is in scope.
 
 Workflow:
 

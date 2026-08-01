@@ -1,105 +1,36 @@
-# Han Hu Research And Writing Style Preferences
+# Han Hu Research-Writing Style
 
-Use this reference when the user asks to match Han Hu's style, infer preferences from a prior workspace, revise a review article, write about open datasets/software/benchmarks, prepare an Overleaf or journal submission package, or make thermal-fluid AI writing feel like the user's own work.
+Use this reference only when the user explicitly asks to match Han Hu's established research-writing style. Apply these preferences after the domain and integrity checks in the main skill.
 
-## Core Research Posture
+## Stable Style Primitives
 
-Frame work as a useful contribution to a technical community, not as self-promotion.
+- Start from the mechanical or thermal-fluid problem, coupled physics, and multiscale difficulty before introducing AI, software, or data infrastructure.
+- Treat AI/ML as a means to measure, interpret, reconstruct, predict, or organize physical behavior rather than the final scientific point.
+- Frame laboratory resources as case studies or seed efforts within a balanced field-wide ecosystem.
+- Write connected technical paragraphs with one central purpose. Avoid choppy sentence strings, rhetorical self-questioning, excessive colon clauses, and editorial or promotional commentary.
+- State the technical finding, mechanism, limitation, or need directly. Use `indicates` for supported interpretation, `suggests` for weaker inference, and `demonstrates` only for direct evidence.
+- Make figures, tables, and equations carry the argument. Give related figures distinct roles in the prose.
+- Prefer concise final communication, but do not reduce scientific depth for a high-risk audit, review, or revision.
 
-- Start from an important transport or thermal-management problem.
-- Explain the coupled physics before introducing AI, software, or data infrastructure.
-- Treat AI/ML as a tool for probing, predicting, reconstructing, or organizing thermal-fluid behavior, not as the final point of the work.
-- Separate what is measured, simulated, inferred, proposed, and community-dependent.
-- When the user's lab resources are discussed, present them as case studies or seed efforts within a broader field-wide ecosystem.
+Use [paper-writing-style.md](paper-writing-style.md) for paper structure, [literature-review.md](literature-review.md) for synthesis, and [manuscript-revision-submission.md](manuscript-revision-submission.md) for revision/submission details. Do not duplicate their checklists here.
 
-## Preferred Manuscript Logic
+## Reviews Of Data, Software, And Benchmarks
 
-Build manuscripts through a narrowing technical story.
+- Organize by mechanism, modality, dimensionality, task, evidence maturity, and unresolved gap rather than author chronology.
+- Use spatial-plus-temporal dimensionality when it helps organize multimodal data; do not force the taxonomy onto unrelated work.
+- Connect data classes to plausible analysis or ML tasks and the physical quantities they expose.
+- Treat initial benchmark releases as seed benchmarks and collaborative mechanisms unless coverage, governance, baselines, and external validation support a field-standard claim.
+- Make physics metadata central: geometry, fluid/material, operating conditions, calibration, synchronization, uncertainty, data reduction, and useful dimensionless groups.
+- Separate author-generated availability from third-party resources and avoid one-lab dominance.
 
-1. Establish the two-phase transport or thermal-management need.
-2. Explain the coupled physical mechanisms.
-3. Explain why the mechanisms span scales and make physics-based modeling difficult.
-4. Motivate multimodal data and data-driven modeling as ways to probe different projections of the same process.
-5. Introduce the organizing framework, taxonomy, benchmark, or method.
-6. Review existing datasets, models, tools, and gaps using that framework.
-7. Close with community infrastructure, limitations, and specific future work.
+Use [dataset-software-review.md](dataset-software-review.md) and [data-provenance-and-release.md](data-provenance-and-release.md) for the detailed workflows.
 
-When two figures express related ideas, give each figure a distinct job in the prose. For example, one figure may show many coupled mechanisms, while the next shows the multiscale nature of heat transfer. Do not cite both in one overloaded sentence unless their roles are explicitly separated.
+## Citation And Submission Habits
 
-## Review Article Style
+- Use `FirstAuthor et al.` in prose and avoid long author-chain labels.
+- Verify citation intent after structural edits, especially numeric references, permissions, datasets, and software.
+- Highlight only changed phrases, clauses, or sentences in marked manuscripts.
+- Make reviewer responses complete enough to stand alone and include specific changes and locations.
+- Keep one active Overleaf entry point and remove stale alternate source files from production packages.
 
-Write review articles as synthesis and infrastructure guidance, not as annotated bibliographies.
-
-- Organize the review around a framework, mechanism, modality, dimensionality, workflow, or benchmark need.
-- Use taxonomies to help readers map their own datasets or methods into the review.
-- Discuss representative papers deeply only when they clarify a method, mechanism, limitation, or benchmark pattern.
-- Group background references by category and discuss key papers selectively.
-- Include tables and figures that do analytical work: taxonomy tables, dataset inventories, benchmark matrices, readiness scorecards, metadata workflows, or roadmap figures.
-- Avoid one-lab dominance. If NED3 resources are included, balance them with third-party resources and explicitly state that NED3 is an implementation case, not the center of the review.
-
-## Open Data, Software, And Benchmark Framing
-
-For open thermal-fluid datasets and AI tools, emphasize reuse infrastructure.
-
-- Describe datasets by data object, modality, S+TD class, physics metadata, labels, split strategy, decoders, and benchmark task.
-- Use the S+TD idea when helpful: 0+0D point/tabular data, 0+1D time series, 1+0D/1+1D profiles, 2+0D images, 2+1D videos or fields, 3+0D/3+1D simulation fields, and mixed multimodal records.
-- Connect each data class to plausible AI tasks: regression, sequence learning, segmentation, classification, surrogate modeling, inverse reconstruction, scientific ML, cross-domain transfer, or multimodal fusion.
-- Treat benchmark datasets as staged community efforts unless a complete benchmark already exists. It is acceptable to propose or seed a benchmark, but do not overclaim that a small initial dataset solves the benchmark problem.
-- Emphasize cross-laboratory splits, run-held-out splits, surface-held-out splits, fluid-held-out splits, geometry-held-out splits, and heat-load-path-held-out splits when discussing generalization.
-- Include baseline models, raw-to-processed provenance, uncertainty, failure cases, and rules about external data in benchmark proposals.
-
-## Physics Metadata And Data Curation
-
-For thermal-fluid databanks, make physics metadata central.
-
-- Go beyond normal catalog fields such as title, author, keywords, file type, and license.
-- Include geometry, fluid, pressure, heater size, surface condition, heat flux, HTC, CHF, operating path, calibration, sensor locations, sampling rate, frame rate, spatial scale, synchronization, uncertainty, and data-reduction equations.
-- Include mechanism-level quantities when useful: Jakob number, Capillary number, Weber number, Bond number, Reynolds number, Boiling number, Rayleigh-Taylor wavelength, vapor fraction, Zuber-scaled heat flux, or other problem-specific dimensionless groups.
-- Describe curation as a workflow: contributor upload, metadata extraction, data cataloging, high-dimensional profiling, consistency checks against existing datasets and physical laws, standardization, and warehouse/archive storage.
-- Support metadata scrapers and registered feature-detection algorithms for legacy spreadsheets, text files, images, videos, waveforms, and simulation outputs.
-
-## Citation And Literature Hygiene
-
-Be strict with citation coherence.
-
-- Use first-author-last-name plus "et al." in prose. Avoid listing many author names in the main text.
-- Avoid author-chain labels such as "Kharangate-Mudawar-Kim-Qiu-Zhou" or similar group strings.
-- Number references by order of first appearance when the manuscript uses numeric citations.
-- Every reference should be cited; every citation should resolve to the intended reference.
-- After moving text, tables, or figure captions, re-run citation and reference consistency checks.
-- In figure captions, verify permission statements and reference numbers semantically, not only mechanically.
-- Disclose preprints, arXiv versions, or prior public versions transparently in cover letters when submitting an expanded journal version.
-
-## Figure And Table Preferences
-
-Figures and tables should carry the argument.
-
-- Each figure should have a clear role in the manuscript narrative.
-- Do not use placeholder recommendation figures in a final paper; either include the figure and discuss it, or remove it.
-- Place figures near the text that motivates them when possible.
-- Use `Figure~\ref{...}` and `Table~\ref{...}` rather than hard-coded figure or table numbers.
-- Captions should define the purpose of the figure and enough context to stand alone.
-- For review tables, include columns that help readers act: data modality, S+TD class, AI task, metadata needs, benchmark readiness, availability, and evidence level.
-- Separate dataset/software availability created by the authors from third-party resources reviewed in the article.
-
-## Writing Preferences
-
-Prefer clear, compact, technical prose.
-
-- Use paragraph topic sentences and make each paragraph build from context to implication.
-- Avoid too many colon-led clauses in the main text.
-- Avoid repeated sentences that say the same idea in two ways.
-- Use "indicates" for evidence-supported interpretation, "suggests" for weaker inference, and "demonstrates" only when the evidence directly supports the claim.
-- Avoid hype. Prefer "seed benchmark," "case study," "representative example," "proposed community mechanism," or "future infrastructure" when the work is preliminary.
-- Keep acknowledgments, availability statements, and cover letters transparent and concise.
-
-## Overleaf And Submission Habits
-
-For LaTeX/Overleaf submission packages:
-
-- Identify the true source file and remove stale alternate manuscript files before submission.
-- Keep only files needed for production: the active `.tex`, bibliography/support files if useful, and referenced figures.
-- Use a short README only when it helps production compile the source, such as noting XeLaTeX and the main file.
-- If a journal system rejects a zip, prepare a flat individual-upload package with figure paths adjusted so uploaded figures sit beside the main `.tex` file.
-- Keep the review PDF and source files conceptually separate: the PDF is for review, while the source is for production.
-- For cover letters, state journal fit, contribution, originality/no-parallel-submission, conflicts, author approval, and any preprint relationship.
+Use [citation-integrity.md](citation-integrity.md) and [manuscript-revision-submission.md](manuscript-revision-submission.md) for the authoritative procedures.

@@ -98,5 +98,55 @@
       "ask for material compatibility",
       "recommend applicable code or standards lookup"
     ]
+  },
+  {
+    "id": "literature-claim-citation",
+    "prompt": "A review paragraph cites a repository README and an AI search summary to claim that a two-phase ML model generalizes across fluids and facilities.",
+    "expected_checks": [
+      "treat search summary as discovery rather than evidence",
+      "verify the primary paper and exact claim support",
+      "check held-out fluid and facility evidence",
+      "label repository and publication maturity separately"
+    ]
+  },
+  {
+    "id": "manuscript-methodological-review",
+    "prompt": "A reviewer questions mixed definitions and uncertainty in a heat-transfer manuscript, and the proposed response only weakens the wording without changing the analysis.",
+    "expected_checks": [
+      "preserve and compare technical invariants",
+      "repair definitions and uncertainty in the evidence chain",
+      "describe specific revisions and locations",
+      "keep unresolved evidence explicit"
+    ]
+  },
+  {
+    "id": "experimental-htc-data",
+    "prompt": "Analyze repeated heat-transfer coefficient measurements from synchronized thermocouples, flow data, and IR video with uncertain clock alignment and heat loss.",
+    "expected_checks": [
+      "define the measurement equation and units",
+      "separate independent runs from within-run samples",
+      "quantify synchronization and heat-loss uncertainty",
+      "verify energy balance and physical plausibility"
+    ]
+  },
+  {
+    "id": "scientific-python-release",
+    "prompt": "Prepare a thermal-fluid Python package for public release after it produced manuscript figures on one developer machine.",
+    "expected_checks": [
+      "run a clean-environment end-to-end example",
+      "trace figures to input versions and commands",
+      "verify schemas units deterministic ordering and tests",
+      "state validation limits and release status precisely"
+    ]
+  },
+  {
+    "id": "engineering-teaching-material",
+    "prompt": "Create a lesson on internal-flow convection for mechanical-engineering students using equations, a Python example, and a short assignment.",
+    "expected_checks": [
+      "start from a concrete engineering problem",
+      "define variables units assumptions and regime",
+      "connect derivation to code and sanity checks",
+      "include a misconception and transfer task"
+    ]
   }
 ]
