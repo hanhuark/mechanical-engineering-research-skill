@@ -24,6 +24,14 @@ Render at the actual manuscript or slide size and inspect:
 
 Do not encode one typeface, forced float specifier, or punctuation rule as universal. Follow the venue and verify the rendered result.
 
+For multi-plot figures, assign one unique subfigure label to every plot. Place labels consistently outside the axes when the venue permits, with enough clearance from axis labels and neighboring content. Check that labels, legends, annotations, and curves do not overlap and that subplot spacing does not create excessive unused space. Increase the rendered font size or revise the layout when text is not legible at final publication width.
+
+Write captions as complete, descriptive prose. State the measured or calculated quantities, operating conditions, subfigure mapping, line or marker conventions, uncertainty treatment, and important data-reduction choices needed to interpret the figure. Avoid terse fragments and constructions such as "Panel (a) shows." Refer to subfigures with `(a)`, `(b)`, and so forth inside the caption without calling them panels.
+
+Use publication-facing condition labels in figures and legends rather than unexplained internal case identifiers. Label literature datasets with source-specific author-year identifiers when multiple sources are plotted; do not collapse them into a generic "literature" series.
+
+Represent uncertainty only when its statistical meaning and relation to the plotted data are clear. Do not add a generic corner error bar or a label such as "max, k=2 uncertainty" unless the author requests that convention and the caption defines the quantity, coverage factor, and applicability. Prefer point-specific bars, bands, or a clearly explained representative indicator.
+
 ## Manuscript Integration
 
 - Cite and interpret every main figure and table.

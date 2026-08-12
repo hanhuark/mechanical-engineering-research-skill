@@ -32,6 +32,8 @@ Location of changes: [section, paragraph, equation, table, figure, or reference]
 
 For major changes, quote or closely reproduce the revised text. Avoid entries such as "Changes made" without enough detail to verify the response. If a methodological concern requires new analysis, data, validation, or uncertainty treatment, do that work when feasible; do not close it through wording alone.
 
+When the requested evidence is available locally or through authorized sources, address a substantive reviewer concern through the needed analysis, data extraction, model evaluation, figure revision, or source verification. Do not substitute a passive limitation statement or weaker framing merely because the substantive response takes more time. If the author has not specified the preferred effort level and the alternatives differ materially in time or scope, present i) a prose-only response with its unresolved limitation and ii) a substantive response with the required work. Recommend the substantive response and proceed with it when the user has requested a thorough revision. Pause only when the work meets an explicit human-pause condition, requires unavailable evidence, or requires an author-positioning decision.
+
 Prefer a formal narrative response with editor/reviewer headings. A tracking matrix may support the work but should not replace the submitted response. Start from [response-to-reviewers.md](../assets/templates/response-to-reviewers.md) and use [reviewer-response-matrix.csv](../assets/templates/reviewer-response-matrix.csv) internally when useful.
 
 ## Highlighted Manuscript
