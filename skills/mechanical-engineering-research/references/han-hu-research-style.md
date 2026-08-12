@@ -11,8 +11,24 @@ Use this reference only when the user explicitly asks to match Han Hu's establis
 - State the technical finding, mechanism, limitation, or need directly. Use `indicates` for supported interpretation, `suggests` for weaker inference, and `demonstrates` only for direct evidence.
 - Make figures, tables, and equations carry the argument. Give related figures distinct roles in the prose.
 - Prefer concise final communication, but do not reduce scientific depth for a high-risk audit, review, or revision.
+- Use professional publication language without casual expressions, reader guidance, prompt-like statements, or meta-commentary about wording. State the technical meaning directly.
+- Avoid excessive colons and semicolons. Prefer connected complete sentences, using i), ii), and iii) for compact enumerations when needed.
+- Avoid one-sentence paragraphs and strings of very short paragraphs. Each paragraph should develop one central topic through evidence, interpretation, and implication.
+- Use short noun phrases for section titles. Do not place conclusions in headings.
+- Refer to subfigures as `Fig. 6a`, `Fig. 6b`, and so forth. Do not use "panel" in manuscript text or captions.
 
 Use [paper-writing-style.md](paper-writing-style.md) for paper structure, [literature-review.md](literature-review.md) for synthesis, and [manuscript-revision-submission.md](manuscript-revision-submission.md) for revision/submission details. Do not duplicate their checklists here.
+
+## Figure And Caption Preferences
+
+- Use Arial for all figure text unless the target journal explicitly requires another typeface. Keep font sizes legible and consistent at final publication dimensions.
+- Italicize variable symbols. Keep units and subscript or superscript descriptors in roman type unless a mathematical convention or journal rule requires otherwise.
+- Place subfigure labels `(a)`, `(b)`, and so forth outside the plotting box near the upper-left corner, aligned just above the y-axis label and level with the top of the axes with a small cushion, when the journal layout permits.
+- Give every subplot a unique sequential label. Remove excessive whitespace and prevent labels, legends, annotations, and data from overlapping.
+- Write descriptive captions as continuous prose. Identify the quantities, conditions, subfigure mapping, visual encodings, uncertainty treatment, and data-reduction choices without using the word "panel."
+- Discuss figures with enough detail to identify both axes, the experimental or modeled conditions, the principal observation, and the physical interpretation.
+- Use publication-facing operating conditions rather than internal case IDs. Use author-year labels for individual literature datasets.
+- Do not use a generic corner uncertainty marker unless it is explicitly requested and its meaning is unambiguous.
 
 ## Reviews Of Data, Software, And Benchmarks
 

@@ -15,6 +15,18 @@ The preferred style is:
 - Specific: include conditions, geometry, materials, metrics, regimes, uncertainty, and validation where relevant.
 - Careful: separate measured results, model predictions, interpretation, and speculation.
 
+Use professional journal language throughout. Remove conversational expressions, writing advice addressed to the reader, prompt-like commentary, and sentences that discuss how a phrase should be interpreted. State the scientific content directly.
+
+Use short noun phrases for section and subsection titles. Do not write titles as complete sentences or embed a result or conclusion in a heading.
+
+## Paragraph And Sentence Construction
+
+Give each paragraph one central topic that is distinct from the paragraphs around it. State that topic near the beginning, develop it with connected evidence and interpretation, and close with its scientific implication or a transition. Avoid one-sentence paragraphs and repeated very short paragraphs unless the journal format requires them. Merge adjacent material only when it serves the same central topic.
+
+Prefer complete sentences over colon-led explanations or semicolon-linked chains. Use colons and semicolons only when they improve precision and cannot be replaced cleanly by a sentence break. When a sentence must enumerate alternatives, use i), ii), and iii). For a longer sequence, introduce the topic in a complete sentence and develop it with ordered sentences such as "First," "Second," and "Third."
+
+Avoid stock connective words when they do not express a real logical relation. Words such as "consequently," "enable," and "establish" should appear only when their exact meaning is supported. Vary sentence length without creating fragments, repetitive templates, or AI-like prose.
+
 ## Abstract Pattern
 
 Use a dense but logical abstract structure:
@@ -113,6 +125,8 @@ For each major figure or table, develop this logic without forcing stock sentenc
 
 Use varied transitions that make the analysis cumulative. Avoid repeating canned phrases such as "Figure X shows," "It is observed that," or "Physically, this can be attributed to" in every paragraph.
 
+Refer to a subfigure directly as `Fig. 8b`, not as "panel (b)," "the second panel," or `Fig. 8(b)`. Do not use the word "panel" in manuscript text or captions. A substantive figure discussion should identify the horizontal and vertical variables, the operating conditions or data source, the observed relationship, and the physical interpretation or limitation. Do not rely on a brief statement such as "Fig. 8b compares the frequencies."
+
 Do not present plots as isolated results. Each figure should either answer a question, motivate the next analysis, or close a gap from the introduction.
 
 ## Baseline To Generalization
@@ -209,3 +223,7 @@ Before finalizing a paper draft, check:
 - Does each figure discussion include observation, mechanism, and implication?
 - Are model or AI results interpreted physically rather than only statistically?
 - Does the conclusion state concrete findings rather than rephrasing the abstract?
+- Does every paragraph have one developed central topic, with no avoidable one-sentence paragraphs?
+- Are headings short noun phrases rather than sentences or conclusions?
+- Are subfigures cited as `Fig. 8b`, with no use of "panel" in text or captions?
+- Are casual, prompt-like, meta-writing, colon-heavy, semicolon-heavy, and formulaic AI expressions absent?

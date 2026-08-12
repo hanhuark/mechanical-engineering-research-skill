@@ -161,6 +161,34 @@ def validate_skill_resources() -> None:
         require_file(required)
     load_json("skills/mechanical-engineering-research/assets/templates/reproducibility-manifest.json")
 
+    style_files = {
+        "skills/mechanical-engineering-research/SKILL.md": [
+            "For a manuscript authored or supervised by Han Hu",
+        ],
+        "skills/mechanical-engineering-research/references/paper-writing-style.md": [
+            "Paragraph And Sentence Construction",
+            "Do not use the word \"panel\" in manuscript text or captions",
+            "Avoid one-sentence paragraphs",
+        ],
+        "skills/mechanical-engineering-research/references/scientific-figure-and-artifact-qa.md": [
+            "Write captions as complete, descriptive prose",
+            "max, k=2 uncertainty",
+        ],
+        "skills/mechanical-engineering-research/references/han-hu-research-style.md": [
+            "Use Arial for all figure text",
+            "Refer to subfigures as `Fig. 6a`",
+        ],
+        "skills/mechanical-engineering-research/references/manuscript-revision-submission.md": [
+            "Do not substitute a passive limitation statement",
+            "Recommend the substantive response",
+        ],
+    }
+    for path, required_phrases in style_files.items():
+        content = require_file(path).read_text(encoding="utf-8")
+        for phrase in required_phrases:
+            if phrase not in content:
+                fail(f"{path} is missing manuscript-style safeguard: {phrase}")
+
 
 def main() -> int:
     validate_docs()

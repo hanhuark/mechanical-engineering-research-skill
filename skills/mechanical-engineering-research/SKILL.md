@@ -69,6 +69,8 @@ Read only the references needed for the task.
 
 For document, PDF, spreadsheet, or presentation files, also use any available format-specific skill for file manipulation and rendering. Keep this skill responsible for engineering validity and scientific interpretation.
 
+For a manuscript authored or supervised by Han Hu, read [han-hu-research-style.md](references/han-hu-research-style.md) together with the task-specific paper and figure references even when the request does not explicitly ask for style matching.
+
 For iterative peer-review work, use `reviewer-author-loop` as the process scaffold when available. Apply this skill to physics, equations, instrumentation, uncertainty, data reduction, figures, modeling assumptions, and claim support.
 
 ## Output Contract
