@@ -30,6 +30,18 @@ Use [paper-writing-style.md](paper-writing-style.md) for paper structure, [liter
 - Use publication-facing operating conditions rather than internal case IDs. Use author-year labels for individual literature datasets.
 - Do not use a generic corner uncertainty marker unless it is explicitly requested and its meaning is unambiguous.
 
+## Manuscript Revision Calibration
+
+When revising a manuscript to match this style, preserve the scientific evidence while strengthening the connection from engineering need to mechanism, method, result, and bounded implication. Revise the section and paragraph structure before making sentence-level edits; generic simplification alone is insufficient.
+
+- Make the abstract evidence-dense. When the data support it, include two to three principal quantitative findings rather than incidental experimental detail, then state what the result enables within its tested scope.
+- Synthesize the literature by application, architecture, material, diagnostic method, or modeling approach. Distinguish adjacent approaches from the specific remaining gap; do not claim that no prior work exists when relevant neighboring work exists.
+- Define experimental and model boundaries explicitly: system boundary, coordinate convention, imposed and inferred quantities, calibration, uncertainty, and the distinction between a fitted effective property and an intrinsic constituent property.
+- Treat every principal result as a figure-led argument: orient the reader, report the quantitative observation, relate it to the physical architecture or mechanism, and give the design implication.
+- Place each caveat near the claim it bounds. Identify the relevant unmeasured quantity, uncertain boundary, untested condition, or model-form limitation once, rather than repeating generic defensive qualifications throughout the manuscript.
+- Use two to four numbered conclusions for multi-result papers. Each conclusion should state the finding, physical interpretation, and bounded implication, not merely restate a section heading.
+- Do not resolve a substantive evidence gap by weakening prose alone. Identify the additional analysis, validation, or measurement required and preserve uncertainty and provenance in the final manuscript.
+
 ## Reviews Of Data, Software, And Benchmarks
 
 - Organize by mechanism, modality, dimensionality, task, evidence maturity, and unresolved gap rather than author chronology.

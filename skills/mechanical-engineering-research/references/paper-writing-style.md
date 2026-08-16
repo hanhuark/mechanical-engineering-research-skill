@@ -40,6 +40,8 @@ Use a dense but logical abstract structure:
 
 Avoid starting the abstract with broad generic statements if a specific research need is available. Avoid ending with only "results are discussed"; end with what is learned or enabled.
 
+When the evidence supports it, report two to three primary quantitative findings in the abstract. Choose the main comparison, validated range, uncertainty, or performance metric rather than incidental experimental detail.
+
 ## Introduction Pattern
 
 Build the introduction as a narrowing funnel:
@@ -128,6 +130,8 @@ Use varied transitions that make the analysis cumulative. Avoid repeating canned
 Refer to a subfigure directly as `Fig. 8b`, not as "panel (b)," "the second panel," or `Fig. 8(b)`. Do not use the word "panel" in manuscript text or captions. A substantive figure discussion should identify the horizontal and vertical variables, the operating conditions or data source, the observed relationship, and the physical interpretation or limitation. Do not rely on a brief statement such as "Fig. 8b compares the frequencies."
 
 Do not present plots as isolated results. Each figure should either answer a question, motivate the next analysis, or close a gap from the introduction.
+
+Place a qualification near the finding it bounds. State the affected quantity, unmeasured boundary condition, untested regime, or model-form limitation and its consequence; avoid repeated generic disclaimers across the results section.
 
 ## Baseline To Generalization
 
@@ -227,3 +231,6 @@ Before finalizing a paper draft, check:
 - Are headings short noun phrases rather than sentences or conclusions?
 - Are subfigures cited as `Fig. 8b`, with no use of "panel" in text or captions?
 - Are casual, prompt-like, meta-writing, colon-heavy, semicolon-heavy, and formulaic AI expressions absent?
+- Does the abstract report the principal quantitative findings when the evidence supports them?
+- Does the literature review distinguish adjacent approaches from the specific remaining technical gap?
+- Are caveats specific, locally placed, and necessary to interpret the associated claim?
