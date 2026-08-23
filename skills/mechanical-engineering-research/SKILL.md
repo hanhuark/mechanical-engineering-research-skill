@@ -66,10 +66,11 @@ Read only the references needed for the task.
 | Mechanical-engineering teaching material | [teaching-mechanical-engineering.md](references/teaching-mechanical-engineering.md) |
 | Invention disclosure or commercialization support | [innovation-commercialization.md](references/innovation-commercialization.md) |
 | Explicit request to match Han Hu's established research-writing style | [han-hu-research-style.md](references/han-hu-research-style.md) |
+| Calibrated Han Hu manuscript drafting or revision with a private corpus | [han-hu-style-calibration-protocol.md](references/han-hu-style-calibration-protocol.md) |
 
 For document, PDF, spreadsheet, or presentation files, also use any available format-specific skill for file manipulation and rendering. Keep this skill responsible for engineering validity and scientific interpretation.
 
-For a manuscript authored or supervised by Han Hu, read [han-hu-research-style.md](references/han-hu-research-style.md) together with the task-specific paper and figure references even when the request does not explicitly ask for style matching.
+For a manuscript authored or supervised by Han Hu, read [han-hu-research-style.md](references/han-hu-research-style.md) together with the task-specific paper and figure references even when the request does not explicitly ask for style matching. When the user provides or configures a private style-calibration corpus, also read [han-hu-style-calibration-protocol.md](references/han-hu-style-calibration-protocol.md), retrieve only genre-matched evidence, and report the evidence status of the exemplars used.
 
 For iterative peer-review work, use `reviewer-author-loop` as the process scaffold when available. Apply this skill to physics, equations, instrumentation, uncertainty, data reduction, figures, modeling assumptions, and claim support.
 

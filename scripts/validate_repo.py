@@ -150,6 +150,7 @@ def validate_skill_resources() -> None:
     for required in [
         "skills/mechanical-engineering-research/scripts/audit_latex_project.py",
         "skills/mechanical-engineering-research/scripts/audit_data_manifest.py",
+        "skills/mechanical-engineering-research/scripts/audit_style_calibration.py",
         "skills/mechanical-engineering-research/assets/templates/claim-evidence-ledger.csv",
         "skills/mechanical-engineering-research/assets/templates/symbol-unit-convention-ledger.csv",
         "skills/mechanical-engineering-research/assets/templates/data-rights-manifest.csv",
@@ -177,6 +178,10 @@ def validate_skill_resources() -> None:
         "skills/mechanical-engineering-research/references/han-hu-research-style.md": [
             "Use Arial for all figure text",
             "Refer to subfigures as `Fig. 6a`",
+        ],
+        "skills/mechanical-engineering-research/references/han-hu-style-calibration-protocol.md": [
+            "Retrieve two to four corpus entries",
+            "Do not present a Codex-generated revision as a Han Hu author edit",
         ],
         "skills/mechanical-engineering-research/references/manuscript-revision-submission.md": [
             "Do not substitute a passive limitation statement",

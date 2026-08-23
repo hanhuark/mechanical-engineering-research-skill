@@ -12,6 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 LATEX_AUDIT = ROOT / "skills" / "mechanical-engineering-research" / "scripts" / "audit_latex_project.py"
 MANIFEST_AUDIT = ROOT / "skills" / "mechanical-engineering-research" / "scripts" / "audit_data_manifest.py"
+STYLE_AUDIT = ROOT / "skills" / "mechanical-engineering-research" / "scripts" / "audit_style_calibration.py"
 
 
 class SkillScriptTests(unittest.TestCase):
@@ -101,6 +102,28 @@ class SkillScriptTests(unittest.TestCase):
             )
             self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
             self.assertIn("Rows: 1", result.stdout)
+
+    def test_style_calibration_audit_accepts_minimal_corpus_and_lints_draft(self) -> None:
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / "calibration-profile.md").write_text("# Profile\n", encoding="utf-8")
+            case = root / "case"
+            case.mkdir()
+            (root / "corpus-index.json").write_text(
+                '{"cases":[{"id":"case-1","relative_case_path":"case","items":[{"id":"P1","status":"verified accepted-after"}]}]}',
+                encoding="utf-8",
+            )
+            draft = root / "draft.md"
+            draft.write_text("Fig. 2(a) proves the new panel is novel.", encoding="utf-8")
+            result = subprocess.run(
+                [sys.executable, str(STYLE_AUDIT), str(root), "--draft", str(draft)],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            self.assertIn("Style-calibration corpus audit passed.", result.stdout)
+            self.assertIn("avoid 'panel'", result.stdout)
 
 
 if __name__ == "__main__":
