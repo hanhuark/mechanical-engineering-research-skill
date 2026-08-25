@@ -165,6 +165,12 @@ def validate_skill_resources() -> None:
     style_files = {
         "skills/mechanical-engineering-research/SKILL.md": [
             "For a manuscript authored or supervised by Han Hu",
+            "research-logo-and-identity.md",
+        ],
+        "skills/mechanical-engineering-research/references/research-logo-and-identity.md": [
+            "Complete The Brief Before Generating",
+            "Use the selected candidate as the visual source",
+            "SHA-256",
         ],
         "skills/mechanical-engineering-research/references/paper-writing-style.md": [
             "Paragraph And Sentence Construction",

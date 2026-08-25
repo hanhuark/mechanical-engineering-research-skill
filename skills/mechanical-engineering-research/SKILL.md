@@ -1,6 +1,6 @@
 ---
 name: mechanical-engineering-research
-description: Apply source-aware mechanical-engineering judgment to research, analysis, coding, writing, teaching, and release work. Use for thermal-fluid systems, heat transfer, fluid mechanics, thermodynamics, HVAC, energy systems, turbomachinery, piping, multiphase flow, experiments, correlations, CFD, reduced-order models, AI/ML, uncertainty, engineering datasets, literature reviews, citations, manuscripts, reviewer revisions, Overleaf packages, figures, proposals, research software, reproducibility, public releases, or engineering teaching materials.
+description: Apply source-aware mechanical-engineering judgment to research, analysis, coding, writing, teaching, research identity, and release work. Use for thermal-fluid systems, heat transfer, fluid mechanics, thermodynamics, HVAC, energy systems, turbomachinery, piping, multiphase flow, experiments, correlations, CFD, reduced-order models, AI/ML, uncertainty, engineering datasets, literature reviews, citations, manuscripts, reviewer revisions, Overleaf packages, figures, proposals, research software, reproducibility, public releases, engineering teaching materials, or a research-project logo and visual identity.
 ---
 
 # Mechanical Engineering Research
@@ -65,6 +65,7 @@ Read only the references needed for the task.
 | Research presentation or poster | [presentation-slides.md](references/presentation-slides.md) |
 | Mechanical-engineering teaching material | [teaching-mechanical-engineering.md](references/teaching-mechanical-engineering.md) |
 | Invention disclosure or commercialization support | [innovation-commercialization.md](references/innovation-commercialization.md) |
+| Research-project logo, laboratory or software identity, icon, wordmark, or brand asset pack | [research-logo-and-identity.md](references/research-logo-and-identity.md) |
 | Explicit request to match Han Hu's established research-writing style | [han-hu-research-style.md](references/han-hu-research-style.md) |
 | Calibrated Han Hu manuscript drafting or revision with a private corpus | [han-hu-style-calibration-protocol.md](references/han-hu-style-calibration-protocol.md) |
 
