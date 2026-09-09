@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.3.0"
+VERSION = "0.3.1"
 
 
 def fail(message: str) -> None:
@@ -177,6 +177,11 @@ def validate_skill_resources() -> None:
             "Do not use the word \"panel\" in manuscript text or captions",
             "Avoid one-sentence paragraphs",
         ],
+        "skills/mechanical-engineering-research/references/anti-formulaic-writing.md": [
+            "Use quantitative results selectively",
+            "Avoid em dashes in technical prose",
+            "not a zero count",
+        ],
         "skills/mechanical-engineering-research/references/scientific-figure-and-artifact-qa.md": [
             "Write captions as complete, descriptive prose",
             "max, k=2 uncertainty",
@@ -216,6 +221,8 @@ def validate_skill_resources() -> None:
             fail(f"{skill_path} has unexpected skill name")
         if expected_description not in focused_text:
             fail(f"{skill_path} is missing its focused purpose")
+
+    require_file("skills/research-writing-literature/references/anti-formulaic-writing.md")
 
 
 def main() -> int:

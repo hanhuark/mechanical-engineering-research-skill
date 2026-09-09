@@ -1,7 +1,7 @@
 {
   "name": "thermal-fluid-research-workflow",
   "description": "Modular thermal-fluid research skills for analysis, writing, proposals, data, slides, mentoring, and manuscript revision.",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "author": {
     "name": "Han Hu",
     "email": "72934230+hanhuark@users.noreply.github.com",
