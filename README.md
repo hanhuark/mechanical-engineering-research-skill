@@ -18,10 +18,11 @@ The suite keeps task-specific instructions small and discoverable while retainin
 | [`research-proposal-development`](skills/research-proposal-development/SKILL.md) | Solicitation-aligned narratives, milestones, risks, and proposal figures |
 | [`research-data-analysis`](skills/research-data-analysis/SKILL.md) | Baseline-first DOE, data processing, plots, and ML/CFD/experimental analysis |
 | [`research-slide-design`](skills/research-slide-design/SKILL.md) | Graphics-first talks, posters, speaker notes, and visual QA |
+| [`research-schematic-design`](skills/research-schematic-design/SKILL.md) | Editable scientific schematics, graphical abstracts, and facility or workflow figures |
 | [`research-mentor-review`](skills/research-mentor-review/SKILL.md) | Constructive, actionable student-facing research feedback |
 | [`reviewer-author-loop`](skills/reviewer-author-loop/SKILL.md) | Iterative peer review, revision, verification, and re-review |
 
-[![Version](https://img.shields.io/badge/version-v0.3.0-blue?style=for-the-badge)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-v0.4.0-blue?style=for-the-badge)](CHANGELOG.md)
 [![Codex Plugin](https://img.shields.io/badge/Codex-Plugin-blue?style=for-the-badge)](.codex-plugin/plugin.json)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Plugin-purple?style=for-the-badge)](.claude-plugin/plugin.json)
 [![Skill](https://img.shields.io/badge/Codex-Skill-teal?style=for-the-badge)](skills/mechanical-engineering-research/SKILL.md)
@@ -150,14 +151,16 @@ Manual install on Windows:
 ```powershell
 git clone https://github.com/hanhuark/mechanical-engineering-research-skill.git
 cd mechanical-engineering-research-skill
-Copy-Item -Recurse .\skills\mechanical-engineering-research "$env:USERPROFILE\.codex\skills\mechanical-engineering-research" -Force
-Copy-Item -Recurse .\skills\thermal-fluid-analysis "$env:USERPROFILE\.codex\skills\thermal-fluid-analysis" -Force
-Copy-Item -Recurse .\skills\research-writing-literature "$env:USERPROFILE\.codex\skills\research-writing-literature" -Force
-Copy-Item -Recurse .\skills\research-proposal-development "$env:USERPROFILE\.codex\skills\research-proposal-development" -Force
-Copy-Item -Recurse .\skills\research-data-analysis "$env:USERPROFILE\.codex\skills\research-data-analysis" -Force
-Copy-Item -Recurse .\skills\research-slide-design "$env:USERPROFILE\.codex\skills\research-slide-design" -Force
-Copy-Item -Recurse .\skills\research-mentor-review "$env:USERPROFILE\.codex\skills\research-mentor-review" -Force
-Copy-Item -Recurse .\skills\reviewer-author-loop "$env:USERPROFILE\.codex\skills\reviewer-author-loop" -Force
+$skillRoot = "$env:USERPROFILE\.codex\skills"
+Copy-Item -Recurse .\skills\mechanical-engineering-research $skillRoot -Force
+Copy-Item -Recurse .\skills\thermal-fluid-analysis $skillRoot -Force
+Copy-Item -Recurse .\skills\research-writing-literature $skillRoot -Force
+Copy-Item -Recurse .\skills\research-proposal-development $skillRoot -Force
+Copy-Item -Recurse .\skills\research-data-analysis $skillRoot -Force
+Copy-Item -Recurse .\skills\research-slide-design $skillRoot -Force
+Copy-Item -Recurse .\skills\research-schematic-design $skillRoot -Force
+Copy-Item -Recurse .\skills\research-mentor-review $skillRoot -Force
+Copy-Item -Recurse .\skills\reviewer-author-loop $skillRoot -Force
 ```
 
 ### Claude Code
@@ -175,6 +178,7 @@ Then invoke one of the workflow prompts, for example:
 /thermal-fluid-research-workflow:me-cfd-review
 /thermal-fluid-research-workflow:me-correlation-check
 /thermal-fluid-research-workflow:me-figure-discussion
+/thermal-fluid-research-workflow:me-build-schematic
 /thermal-fluid-research-workflow:reviewer-author-loop
 ```
 
@@ -207,6 +211,7 @@ focused skills = task-specific guidance
 | [`me-han-hu-revise.md`](commands/me-han-hu-revise.md) | Revise a manuscript while preserving evidence and applying Han Hu manuscript mode. |
 | [`me-data-analysis.md`](commands/me-data-analysis.md) | Plan baseline-first thermal-fluid data analysis and hypothesis-driven DOE. |
 | [`me-build-slides.md`](commands/me-build-slides.md) | Build graphics-first research presentations and speaker notes. |
+| [`me-build-schematic.md`](commands/me-build-schematic.md) | Build editable scientific schematics, graphical abstracts, and facility or workflow figures. |
 | [`me-code-review.md`](commands/me-code-review.md) | Perform a full architecture, reproducibility, testing, and release review. |
 
 ## Showcase
@@ -273,7 +278,7 @@ The CI workflow in [`.github/workflows/validate.yml`](.github/workflows/validate
 
 ## Release Notes
 
-See [`CHANGELOG.md`](CHANGELOG.md). The `v0.3.0` release line adds the modular skills while retaining the original coordinator for existing users.
+See [`CHANGELOG.md`](CHANGELOG.md). The `v0.3.1` release line adds the anti-formulaic editorial pass to the modular suite; `v0.3.0` introduced the focused skills while retaining the original coordinator for existing users.
 
 ## Related Tools
 

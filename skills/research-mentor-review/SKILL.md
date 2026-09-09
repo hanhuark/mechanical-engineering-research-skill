@@ -27,6 +27,10 @@ Separate:
 
 Avoid generic praise, vague requests to "add detail," and invented literature or data. Quote or identify the exact location when possible. Keep the tone direct but respectful; explain the path forward rather than simply rejecting the work.
 
+## Formulaic Writing Check
+
+When reviewing a manuscript or proposal, flag prose that reads as automatically assembled rather than technically chosen: detail-heavy abstracts, contrast words without a true contrast, vague `establish` claims, stacked hyphenated modifiers, and em-dash clauses. Describe the reader-facing problem and propose a specific revision. Do not infer or allege AI authorship from style alone.
+
 ## Coordination
 
-Use `thermal-fluid-analysis` for mechanics and heat-transfer judgment; `research-writing-literature` for narrative and citation work; `research-data-analysis` for DOE, code, data, and plots; `research-slide-design` for talks; `research-proposal-development` for proposals; and `reviewer-author-loop` when the user wants repeated review, revision, and verification.
+Use `thermal-fluid-analysis` for mechanics and heat-transfer judgment; `research-writing-literature` for narrative and citation work; `research-data-analysis` for DOE, code, data, and plots; `research-slide-design` for talks; `research-schematic-design` for facility, mechanism, workflow, and graphical-abstract figures; `research-proposal-development` for proposals; and `reviewer-author-loop` when the user wants repeated review, revision, and verification.
