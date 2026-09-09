@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.2.0"
+VERSION = "0.3.0"
 
 
 def fail(message: str) -> None:
@@ -199,6 +199,23 @@ def validate_skill_resources() -> None:
         for phrase in required_phrases:
             if phrase not in content:
                 fail(f"{path} is missing manuscript-style safeguard: {phrase}")
+
+    focused_skills = {
+        "thermal-fluid-analysis": "Analyze thermal-fluid engineering systems",
+        "research-writing-literature": "Write and revise rigorous research narratives",
+        "research-proposal-development": "Develop research proposals",
+        "research-data-analysis": "Design and analyze engineering experiments or simulations",
+        "research-slide-design": "Design clean, graphics-first technical presentations",
+        "research-mentor-review": "Provide constructive, evidence-based research mentoring feedback",
+        "reviewer-author-loop": "Iterative manuscript improvement workflow",
+    }
+    for skill_name, expected_description in focused_skills.items():
+        skill_path = f"skills/{skill_name}/SKILL.md"
+        focused_text = require_file(skill_path).read_text(encoding="utf-8")
+        if f"name: {skill_name}" not in focused_text.split("---", 2)[1]:
+            fail(f"{skill_path} has unexpected skill name")
+        if expected_description not in focused_text:
+            fail(f"{skill_path} is missing its focused purpose")
 
 
 def main() -> int:

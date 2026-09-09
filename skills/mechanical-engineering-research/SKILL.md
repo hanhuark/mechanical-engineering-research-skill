@@ -5,6 +5,20 @@ description: Apply source-aware mechanical-engineering judgment to research, ana
 
 # Mechanical Engineering Research
 
+## Skill Suite
+
+Use this skill as the cross-cutting coordinator when a request spans multiple research activities. For a focused deliverable, use the specialist skill that owns it:
+
+- [thermal-fluid-analysis](../thermal-fluid-analysis/SKILL.md): thermal-fluid physics, experiments, CFD, correlations, uncertainty, scaling, and design tradeoffs.
+- [research-writing-literature](../research-writing-literature/SKILL.md): literature synthesis, citations, introductions, manuscript sections, and figure-led discussion.
+- [research-proposal-development](../research-proposal-development/SKILL.md): solicitation-aligned proposals, review criteria, preliminary results, milestones, risks, and proposal figures.
+- [research-data-analysis](../research-data-analysis/SKILL.md): baseline cases, hypothesis-driven DOE, reproducible analysis, plots, CFD/experimental data, and ML evaluation.
+- [research-slide-design](../research-slide-design/SKILL.md): research talks, posters, visual logic, speaker notes, and presentation QA.
+- [research-mentor-review](../research-mentor-review/SKILL.md): constructive student-facing feedback with prioritized, actionable next steps.
+- [reviewer-author-loop](../reviewer-author-loop/SKILL.md): iterative reviewer critique, author revision, verification, and re-review.
+
+The coordinator retains the evidence and integrity gates below. Do not load all specialist skills by default; select the smallest combination that fits the actual deliverable.
+
 ## Core Workflow
 
 1. Define the engineering decision or research question.
