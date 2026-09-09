@@ -2,6 +2,19 @@
 
 All notable changes to the Thermal-Fluid Research Workflow Plugin are documented here.
 
+## v0.3.0 - 2026-09-08
+
+### Added
+
+- Focused skills for thermal-fluid analysis, research writing and literature, proposal development, research data analysis, research slide design, and constructive research mentor review.
+- A general `reviewer-author-loop` skill and reusable command for iterative review, revision, verification, re-review, and human-pause decisions.
+- Portable, task-specific reference bundles for writing/literature, proposal, data-analysis, and slide-design skills.
+
+### Changed
+
+- Kept `mechanical-engineering-research` as the backward-compatible coordinator while adding task-specific routing to avoid loading unrelated instructions.
+- Updated Codex and Claude plugin metadata and README documentation for the modular suite.
+
 ## v0.2.0 - 2026-06-09
 
 ### Added
