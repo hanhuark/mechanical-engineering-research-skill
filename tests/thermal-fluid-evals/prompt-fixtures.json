@@ -140,6 +140,16 @@
     ]
   },
   {
+    "id": "schematic-evidence-boundary",
+    "prompt": "Create a graphical abstract for a boiling experiment that combines a measured flow loop, a CFD domain, high-speed video, and a proposed AI prediction pathway. The user asks image generation to add labels and arrows.",
+    "expected_checks": [
+      "separate measured simulated and proposed elements",
+      "require exact editable labels arrows and units",
+      "use image generation only as a concept reference",
+      "verify flow and data-path meanings at final size"
+    ]
+  },
+  {
     "id": "engineering-teaching-material",
     "prompt": "Create a lesson on internal-flow convection for mechanical-engineering students using equations, a Python example, and a short assignment.",
     "expected_checks": [

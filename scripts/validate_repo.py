@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.3.1"
+VERSION = "0.4.0"
 
 
 def fail(message: str) -> None:
@@ -61,8 +61,8 @@ def validate_manifests() -> None:
 def validate_commands() -> None:
     command_dir = require_dir("commands")
     commands = sorted(command_dir.glob("*.md"))
-    if len(commands) < 13:
-        fail("expected at least 13 command prompts")
+    if len(commands) < 14:
+        fail("expected at least 14 command prompts")
 
     for command in commands:
         text = command.read_text(encoding="utf-8")
@@ -213,6 +213,7 @@ def validate_skill_resources() -> None:
         "research-slide-design": "Design clean, graphics-first technical presentations",
         "research-mentor-review": "Provide constructive, evidence-based research mentoring feedback",
         "reviewer-author-loop": "Iterative manuscript improvement workflow",
+        "research-schematic-design": "Create publication-quality, editable scientific and engineering schematics",
     }
     for skill_name, expected_description in focused_skills.items():
         skill_path = f"skills/{skill_name}/SKILL.md"
@@ -223,6 +224,13 @@ def validate_skill_resources() -> None:
             fail(f"{skill_path} is missing its focused purpose")
 
     require_file("skills/research-writing-literature/references/anti-formulaic-writing.md")
+    for required in [
+        "skills/research-schematic-design/references/schematic-brief.md",
+        "skills/research-schematic-design/references/schematic-workflow.md",
+        "skills/research-schematic-design/references/scientific-visual-qa.md",
+        "skills/research-schematic-design/assets/templates/schematic-brief.yaml",
+    ]:
+        require_file(required)
 
 
 def main() -> int:

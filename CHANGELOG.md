@@ -2,6 +2,17 @@
 
 All notable changes to the Thermal-Fluid Research Workflow Plugin are documented here.
 
+## v0.4.0 - 2026-09-08
+
+### Added
+
+- A `research-schematic-design` skill for publication-quality, editable scientific schematics, graphical abstracts, facility diagrams, and research workflows.
+- A reusable schematic brief, native-vector and hybrid production guidance, scientific visual QA, and the `me-build-schematic` workflow prompt.
+
+### Changed
+
+- Made native editable geometry the default for technical labels, arrows, units, and legends. Image generation is limited to controlled visual concepts that are rebuilt and verified before delivery.
+
 ## v0.3.1 - 2026-09-08
 
 ### Added

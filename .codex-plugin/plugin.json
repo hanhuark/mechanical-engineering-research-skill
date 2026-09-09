@@ -1,7 +1,7 @@
 {
   "name": "thermal-fluid-research-workflow",
-  "version": "0.3.1",
-  "description": "Modular thermal-fluid research skills for analysis, writing, proposals, data, slides, mentoring, and manuscript revision.",
+  "version": "0.4.0",
+  "description": "Modular thermal-fluid research skills for analysis, writing, proposals, data, slides, editable schematics, mentoring, and manuscript revision.",
   "author": {
     "name": "Han Hu",
     "email": "72934230+hanhuark@users.noreply.github.com",
@@ -26,13 +26,15 @@
     "manuscript-revision",
     "experiment-planning",
     "ai-for-engineering",
-    "codex-skill"
+    "codex-skill",
+    "scientific-schematics",
+    "graphical-abstracts"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Thermal-Fluid Research Workflow",
-    "shortDescription": "Focused thermal-fluid research skills plus a cross-cutting rigor layer.",
-    "longDescription": "A modular workflow plugin for thermal-fluid mechanical engineering research. Use focused skills for thermal-fluid analysis, research writing and literature, proposal development, data analysis, slide design, and constructive mentor review; use the reviewer-author loop for iterative peer review, revision, verification, rebuttal, and acceptance or pause decisions. The mechanical-engineering-research skill coordinates cross-cutting work and preserves evidence and validity checks.",
+    "shortDescription": "Focused thermal-fluid research skills plus a cross-cutting rigor and schematic-design layer.",
+    "longDescription": "A modular workflow plugin for thermal-fluid mechanical engineering research. Use focused skills for thermal-fluid analysis, research writing and literature, proposal development, data analysis, slide design, editable scientific schematic design, and constructive mentor review; use the reviewer-author loop for iterative peer review, revision, verification, rebuttal, and acceptance or pause decisions. The mechanical-engineering-research skill coordinates cross-cutting work and preserves evidence and validity checks.",
     "developerName": "Han Hu",
     "category": "Productivity",
     "capabilities": [
@@ -48,6 +50,7 @@
       "Review this CFD setup and identify unsupported claims.",
       "Design an experiment plan with uncertainty and calibration checks.",
       "Review this figure and explain the physics.",
+      "Create an editable publication-quality schematic from this engineering brief.",
       "Give actionable mentor feedback on this student research draft."
     ],
     "brandColor": "#0F766E",

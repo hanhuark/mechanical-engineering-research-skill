@@ -14,6 +14,7 @@ Use this skill as the cross-cutting coordinator when a request spans multiple re
 - [research-proposal-development](../research-proposal-development/SKILL.md): solicitation-aligned proposals, review criteria, preliminary results, milestones, risks, and proposal figures.
 - [research-data-analysis](../research-data-analysis/SKILL.md): baseline cases, hypothesis-driven DOE, reproducible analysis, plots, CFD/experimental data, and ML evaluation.
 - [research-slide-design](../research-slide-design/SKILL.md): research talks, posters, visual logic, speaker notes, and presentation QA.
+- [research-schematic-design](../research-schematic-design/SKILL.md): publication-quality editable facility, mechanism, workflow, and graphical-abstract schematics.
 - [research-mentor-review](../research-mentor-review/SKILL.md): constructive student-facing feedback with prioritized, actionable next steps.
 - [reviewer-author-loop](../reviewer-author-loop/SKILL.md): iterative reviewer critique, author revision, verification, and re-review.
 
@@ -74,6 +75,7 @@ Read only the references needed for the task.
 | Material result change or construct redefinition | [result-change-and-construct-audit.md](references/result-change-and-construct-audit.md) |
 | Data provenance, benchmark design, research package, or public release | [data-provenance-and-release.md](references/data-provenance-and-release.md) |
 | Figure, table, Word, PDF, spreadsheet, or slide QA | [scientific-figure-and-artifact-qa.md](references/scientific-figure-and-artifact-qa.md) |
+| Scientific schematic, graphical abstract, facility, workflow, or system diagram | [research-schematic-design](../research-schematic-design/SKILL.md) |
 | Thermal-fluid AI/ML workflow | [ai-tools-thermal-fluids.md](references/ai-tools-thermal-fluids.md) |
 | Research code, pipeline, notebook, or package | [research-coding.md](references/research-coding.md) |
 | Overleaf, VS Code, GitHub, git, or archival toolchain | [research-toolchain.md](references/research-toolchain.md) |

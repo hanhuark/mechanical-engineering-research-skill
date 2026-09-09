@@ -25,6 +25,8 @@ Read `references/presentation-slides.md` before building an outline, editing sli
 
 Use source figures only after checking readability at presentation size. Simplify legends, emphasize the comparison relevant to the claim, and label data provenance. Do not crop away axes, units, uncertainty, or conditions that affect interpretation.
 
+For a publication schematic, graphical abstract, facility, workflow, or system diagram, use `research-schematic-design` to preserve editable geometry and verify the physical meaning of every label and arrow.
+
 ## Final Check
 
 Review the slide sequence in presentation mode. Check that text fits, graphics are legible at distance, no objects overlap, animations clarify rather than distract, and a viewer can recover the narrative from slide titles and visual claims alone.

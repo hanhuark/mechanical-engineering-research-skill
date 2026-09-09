@@ -33,4 +33,4 @@ When reviewing a manuscript or proposal, flag prose that reads as automatically 
 
 ## Coordination
 
-Use `thermal-fluid-analysis` for mechanics and heat-transfer judgment; `research-writing-literature` for narrative and citation work; `research-data-analysis` for DOE, code, data, and plots; `research-slide-design` for talks; `research-proposal-development` for proposals; and `reviewer-author-loop` when the user wants repeated review, revision, and verification.
+Use `thermal-fluid-analysis` for mechanics and heat-transfer judgment; `research-writing-literature` for narrative and citation work; `research-data-analysis` for DOE, code, data, and plots; `research-slide-design` for talks; `research-schematic-design` for facility, mechanism, workflow, and graphical-abstract figures; `research-proposal-development` for proposals; and `reviewer-author-loop` when the user wants repeated review, revision, and verification.

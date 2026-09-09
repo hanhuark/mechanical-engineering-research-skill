@@ -8,12 +8,14 @@
 
 当答案不仅要写得流畅，还要在热流体物理上站得住脚时，使用这个插件。
 
-[![Version](https://img.shields.io/badge/version-v0.2.0-blue?style=for-the-badge)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-v0.4.0-blue?style=for-the-badge)](CHANGELOG.md)
 [![Codex Plugin](https://img.shields.io/badge/Codex-Plugin-blue?style=for-the-badge)](.codex-plugin/plugin.json)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Plugin-purple?style=for-the-badge)](.claude-plugin/plugin.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 如果这个项目对你的研究工作流有帮助，欢迎给仓库点 star，方便更多机械工程研究者发现它。
+
+新增 `research-schematic-design`：用于生成可编辑、可审计的科研示意图。图像生成仅用于构图参考；最终文字、箭头、单位和几何关系应以确定性的矢量对象重建并验证。
 
 ## 两分钟演示
 
