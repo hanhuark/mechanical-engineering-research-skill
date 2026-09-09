@@ -21,7 +21,7 @@ The suite keeps task-specific instructions small and discoverable while retainin
 | [`research-mentor-review`](skills/research-mentor-review/SKILL.md) | Constructive, actionable student-facing research feedback |
 | [`reviewer-author-loop`](skills/reviewer-author-loop/SKILL.md) | Iterative peer review, revision, verification, and re-review |
 
-[![Version](https://img.shields.io/badge/version-v0.3.0-blue?style=for-the-badge)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-v0.3.1-blue?style=for-the-badge)](CHANGELOG.md)
 [![Codex Plugin](https://img.shields.io/badge/Codex-Plugin-blue?style=for-the-badge)](.codex-plugin/plugin.json)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Plugin-purple?style=for-the-badge)](.claude-plugin/plugin.json)
 [![Skill](https://img.shields.io/badge/Codex-Skill-teal?style=for-the-badge)](skills/mechanical-engineering-research/SKILL.md)
@@ -273,7 +273,7 @@ The CI workflow in [`.github/workflows/validate.yml`](.github/workflows/validate
 
 ## Release Notes
 
-See [`CHANGELOG.md`](CHANGELOG.md). The `v0.3.0` release line adds the modular skills while retaining the original coordinator for existing users.
+See [`CHANGELOG.md`](CHANGELOG.md). The `v0.3.1` release line adds the anti-formulaic editorial pass to the modular suite; `v0.3.0` introduced the focused skills while retaining the original coordinator for existing users.
 
 ## Related Tools
 

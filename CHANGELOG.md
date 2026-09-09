@@ -2,6 +2,17 @@
 
 All notable changes to the Thermal-Fluid Research Workflow Plugin are documented here.
 
+## v0.3.1 - 2026-09-08
+
+### Added
+
+- An anti-formulaic technical-writing reference for abstracts, manuscripts, proposals, and reviewer responses.
+- Context-sensitive checks for detail-heavy abstracts, empty contrast transitions, vague `establish` claims, unnecessary hyphenated compounds, and em-dash clauses.
+
+### Changed
+
+- Added the editorial-quality check to research-writing and mentor-review workflows without treating writing style as evidence of AI authorship.
+
 ## v0.3.0 - 2026-09-08
 
 ### Added

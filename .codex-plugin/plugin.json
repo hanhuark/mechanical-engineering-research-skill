@@ -1,6 +1,6 @@
 {
   "name": "thermal-fluid-research-workflow",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Modular thermal-fluid research skills for analysis, writing, proposals, data, slides, mentoring, and manuscript revision.",
   "author": {
     "name": "Han Hu",
