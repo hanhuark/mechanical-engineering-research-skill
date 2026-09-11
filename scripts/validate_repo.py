@@ -189,6 +189,7 @@ def validate_skill_resources() -> None:
         "skills/mechanical-engineering-research/references/han-hu-research-style.md": [
             "Use Arial for all figure text",
             "Refer to subfigures as `Fig. 6a`",
+            "Do not treat combining datasets, building a map, or running a model as the innovation by itself",
         ],
         "skills/mechanical-engineering-research/references/han-hu-style-calibration-protocol.md": [
             "Retrieve two to four corpus entries",
