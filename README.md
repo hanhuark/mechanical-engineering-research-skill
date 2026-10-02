@@ -1,4 +1,4 @@
-# Thermal-Fluid Research Workflow Plugin
+# Mechanical Engineering Research Skill | Thermal-Fluid Research Workflow Plugin
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md)
 
