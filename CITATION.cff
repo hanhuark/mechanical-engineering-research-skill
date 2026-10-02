@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If this software supports published research, teaching, or a public research workflow, please cite it using the metadata below."
+title: "Mechanical Engineering Research Skill"
+type: software
+authors:
+  - family-names: Hu
+    given-names: Han
+repository-code: "https://github.com/hanhuark/mechanical-engineering-research-skill"
+url: "https://github.com/hanhuark/mechanical-engineering-research-skill"
+license: MIT
+keywords:
+  - mechanical engineering
+  - thermal fluids
+  - research workflow
+  - technical writing
+  - AI agents
