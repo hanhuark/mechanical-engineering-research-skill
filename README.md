@@ -34,6 +34,15 @@ If this helps your research workflow, please star the repo so other mechanical-e
 
 Want the fastest path? Start with [`QUICKSTART.md`](QUICKSTART.md).
 
+| You want to... | Start here |
+| --- | --- |
+| Try the plugin on one research task | Follow [`QUICKSTART.md`](QUICKSTART.md), then use a prompt you can independently check. |
+| Improve a recurring lab workflow | Use the focused-skill pilot table in the [Adoption Guide](ADOPTION.md#research-group-or-mentor-a-small-pilot). |
+| Teach the underlying engineering AI practices | Explore the companion [Machine Learning for Engineers](https://github.com/hanhuark/machine-learning-for-engineers) curriculum. |
+| Cite or improve the software | Use [CITATION.cff](CITATION.cff) or read [Contributing](#contributing). |
+
+The plugin assists reasoning and workflow; it does not replace the investigator's scientific judgment, source verification, authorship responsibility, or data-rights obligations.
+
 ## Two-Minute Demo
 
 Paste a prompt like this after installing the skill:
@@ -293,6 +302,10 @@ See [`CHANGELOG.md`](CHANGELOG.md). The `v0.3.1` release line adds the anti-form
 ## Contributing
 
 Contributions are welcome when they improve reusable thermal-fluid research practice: stronger validity checks, better examples, clearer workflows, more robust eval fixtures, or better installation documentation. See [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
+## Citation
+
+If this plugin informs published research, teaching, or a public research workflow, cite the repository version or commit used. GitHub can export the machine-readable metadata in [`CITATION.cff`](CITATION.cff). A DOI should be added only through a versioned archival release.
 
 ## License
 
