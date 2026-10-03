@@ -303,6 +303,13 @@ See [`CHANGELOG.md`](CHANGELOG.md). The `v0.3.1` release line adds the anti-form
 
 Contributions are welcome when they improve reusable thermal-fluid research practice: stronger validity checks, better examples, clearer workflows, more robust eval fixtures, or better installation documentation. See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
+## Maintainer Resources
+
+- [`ADOPTION.md`](ADOPTION.md): bounded individual, lab, and mentor pilots.
+- [`OUTREACH_KIT.md`](OUTREACH_KIT.md): factual public-post, researcher-message, and pilot-feedback templates.
+- [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md): release, archival-citation, and communication checks.
+- [`assets/branding/`](assets/branding/): reproducible social-preview candidate and generation script.
+
 ## Citation
 
 If this plugin informs published research, teaching, or a public research workflow, cite the repository version or commit used. GitHub can export the machine-readable metadata in [`CITATION.cff`](CITATION.cff). A DOI should be added only through a versioned archival release.
