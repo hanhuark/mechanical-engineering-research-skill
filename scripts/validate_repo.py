@@ -182,6 +182,7 @@ def validate_skill_resources() -> None:
             "Use quantitative results selectively",
             "Term Legitimacy",
             "Vague And Repeated Terms",
+            "Reader Focus And Modifier Load",
             "Avoid unspaced em dashes in technical prose",
             "not a zero count",
         ],

@@ -155,6 +155,28 @@ class SkillScriptTests(unittest.TestCase):
             self.assertEqual(report["dash_forms"]["spaced_en_dash"], 1)
             self.assertIn("flow-boiling", report["hyphenated_compounds"])
 
+    def test_technical_writing_audit_flags_reader_focus_candidates(self) -> None:
+        with tempfile.TemporaryDirectory() as folder:
+            draft = Path(folder) / "draft.md"
+            draft.write_text(
+                "# A Critical Review of Physics-Grounded Sensing, Measurement, Diagnostics, and AI-Enabled Interpretation\n\n"
+                "The experimentally validated, physics-grounded, stage-resolved framework combines optical, acoustic, "
+                "and thermal measurements to provide an integrated characterization of the transient boiling process "
+                "across multiple operating conditions, surface states, and diagnostic configurations.\n",
+                encoding="utf-8",
+            )
+            result = subprocess.run(
+                [sys.executable, str(TECHNICAL_WRITING_AUDIT), str(draft), "--json"],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            report = json.loads(result.stdout)
+            self.assertEqual(len(report["reader_focus"]["crowded_headings"]), 1)
+            self.assertEqual(len(report["reader_focus"]["comma_heavy_sentences"]), 1)
+            self.assertEqual(len(report["reader_focus"]["stacked_modifier_sentences"]), 1)
+
 
 if __name__ == "__main__":
     unittest.main()
