@@ -23,6 +23,7 @@ DEFAULT_LAZY_TERM_PATTERNS = {
 }
 EN_DASH = "\u2013"
 EM_DASH = "\u2014"
+HYPHENATED_COMPOUND_PATTERN = r"\b[A-Za-z]+(?:-[A-Za-z]+)+\b"
 
 
 def count_matches(text: str, pattern: str) -> int:
@@ -39,8 +40,72 @@ def count_unspaced_characters(text: str, character: str) -> int:
 
 
 def collect_hyphenated_compounds(text: str) -> dict[str, int]:
-    compounds = re.findall(r"\b[A-Za-z]+(?:-[A-Za-z]+)+\b", text)
+    compounds = re.findall(HYPHENATED_COMPOUND_PATTERN, text)
     return dict(sorted(Counter(item.lower() for item in compounds).items()))
+
+
+def word_count(text: str) -> int:
+    return len(re.findall(r"[A-Za-z0-9]+(?:[-'][A-Za-z0-9]+)*", text))
+
+
+def is_heading_line(line: str) -> bool:
+    return bool(
+        re.match(r"^\s{0,3}#{1,6}\s+", line)
+        or re.search(r"\\(?:title|section|subsection)\{[^{}]+\}", line)
+    )
+
+
+def sentence_candidates(text: str) -> list[dict[str, object]]:
+    """Return sentences whose structure may hide the main point from a reader."""
+    body = "\n".join(line for line in text.splitlines() if not is_heading_line(line))
+    normalized = re.sub(r"\s+", " ", body).strip()
+    sentences = [item.strip() for item in re.split(r"(?<=[.!?])\s+", normalized) if item.strip()]
+    long_sentences: list[dict[str, object]] = []
+    comma_heavy_sentences: list[dict[str, object]] = []
+    stacked_modifier_sentences: list[dict[str, object]] = []
+    for number, sentence in enumerate(sentences, start=1):
+        words = word_count(sentence)
+        comma_count = sentence.count(",")
+        compound_count = len(re.findall(HYPHENATED_COMPOUND_PATTERN, sentence))
+        record = {"sentence": number, "word_count": words, "text": sentence}
+        if words >= 35:
+            long_sentences.append(record)
+        if comma_count >= 3:
+            comma_heavy_sentences.append({**record, "comma_count": comma_count})
+        if compound_count >= 2:
+            stacked_modifier_sentences.append({**record, "hyphenated_compound_count": compound_count})
+    return {
+        "long_sentences": long_sentences,
+        "comma_heavy_sentences": comma_heavy_sentences,
+        "stacked_modifier_sentences": stacked_modifier_sentences,
+    }
+
+
+def heading_candidates(text: str) -> list[dict[str, object]]:
+    """Return catalog-like Markdown or LaTeX headings for human review."""
+    headings: list[tuple[int, str]] = []
+    for line_number, line in enumerate(text.splitlines(), start=1):
+        markdown_match = re.match(r"^\s{0,3}#{1,6}\s+(.+?)\s*$", line)
+        latex_match = re.search(r"\\(?:title|section|subsection)\{([^{}]+)\}", line)
+        if markdown_match:
+            headings.append((line_number, markdown_match.group(1)))
+        elif latex_match:
+            headings.append((line_number, latex_match.group(1)))
+
+    crowded: list[dict[str, object]] = []
+    for line_number, heading in headings:
+        comma_count = heading.count(",")
+        has_coordination = bool(re.search(r"\b(?:and|or)\b", heading, flags=re.IGNORECASE))
+        if comma_count >= 2 and has_coordination:
+            crowded.append(
+                {
+                    "line": line_number,
+                    "word_count": word_count(heading),
+                    "comma_count": comma_count,
+                    "text": heading,
+                }
+            )
+    return crowded
 
 
 def term_patterns(extra_terms: Iterable[str]) -> dict[str, str]:
@@ -54,6 +119,8 @@ def term_patterns(extra_terms: Iterable[str]) -> dict[str, str]:
 
 def build_report(text: str, source: Path, extra_terms: Iterable[str]) -> dict[str, object]:
     patterns = term_patterns(extra_terms)
+    reader_focus = sentence_candidates(text)
+    reader_focus["crowded_headings"] = heading_candidates(text)
     return {
         "source": str(source),
         "lazy_term_counts": {
@@ -70,10 +137,12 @@ def build_report(text: str, source: Path, extra_terms: Iterable[str]) -> dict[st
             "unspaced_em_dash": count_unspaced_characters(text, EM_DASH),
         },
         "hyphenated_compounds": collect_hyphenated_compounds(text),
+        "reader_focus": reader_focus,
         "editorial_note": (
             "Counts and compound inventories are review candidates, not errors or evidence of AI authorship. "
             "Check whether a term states a specific mechanism or result, whether a compound is standard or defined, "
-            "and whether dash spacing follows the target style."
+            "whether dash spacing follows the target style, and whether a reader can identify the main point before "
+            "the qualifiers."
         ),
     }
 
@@ -91,6 +160,9 @@ def format_report(report: dict[str, object]) -> str:
         lines.extend(f"- {term}: {count}" for term, count in compounds.items())
     else:
         lines.append("- none detected")
+    lines.extend(["", "Reader-focus candidates:"])
+    for category, candidates in report["reader_focus"].items():
+        lines.append(f"- {category}: {len(candidates)}")
     lines.extend(["", f"Editorial note: {report['editorial_note']}"])
     return "\n".join(lines)
 
