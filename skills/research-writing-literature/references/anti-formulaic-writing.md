@@ -22,14 +22,37 @@ Read the draft for constructions that make adjacent sentences sound templated or
 - Prefer specific physical verbs such as `measured`, `observed`, `showed`, `indicated`, `quantified`, `predicted`, `reduced`, or `increased` when they more accurately state the evidence.
 - Vary sentence openings and transitions. Do not make every paragraph follow claim, contrast word, and conclusion as a fixed pattern.
 
+## Term Legitimacy
+
+Do not introduce a phrase into technical prose merely because it is grammatically convenient. Before retaining an unfamiliar label, compound, or modifier, ask whether an informed reader in the target field would recognize it, whether it is needed for the argument, and whether it has been defined or supported by a source when appropriate.
+
+- Flag unexplained labels assembled from generic words, especially dense compound modifiers and convenient constructions such as `-aware`, `-driven`, `-enabled`, `-centric`, or `-oriented`. They are not automatically wrong; they need a clear, field-appropriate meaning.
+- Prefer the ordinary technical noun and a direct verb. Replace an opaque label with the physical quantity, method, mechanism, or decision it denotes.
+- Do not flag established field terminology, standard instrument/model names, accepted mathematical language, or a necessary newly defined construct simply because it is unfamiliar to the auditor.
+- When a new term is genuinely useful, define it once, use it consistently, and confirm that it clarifies rather than disguises the physical or methodological meaning.
+
+## Vague And Repeated Terms
+
+Audit repeated general-purpose terms such as forms of **enable**, forms of **establish**, **unusually**, and **together**. These words are not banned. Review them when they recur or when they carry the main technical claim without naming the mechanism, comparison, or result.
+
+- Replace `enables improved cooling` with the actual capability or causal path, for example `increases the wetted area available for evaporation` when that is what the evidence supports.
+- Replace `establishes the effect` with the measured, derived, or compared finding.
+- Give `unusually` a comparator, regime, or quantitative basis; otherwise remove it.
+- Replace vague uses of `together` with the relationship between the named observations, methods, or mechanisms. `The optical and acoustic signals jointly identified the onset of dryout` is clearer than `Together, the results showed ...`.
+
+Repeated use is a prompt for editorial review, not a zero-tolerance rule. A precise term may remain when it is the most accurate wording.
+
 ## Hyphens And Dashes
 
-Use hyphens for standard compound modifiers only where grammar requires them, especially before a noun: `high-speed imaging`, `two-phase flow`, and `current-density dependence`. Avoid inventing or stacking compounds that obscure the underlying nouns.
+Use hyphen-minus (`-`) for standard compound modifiers only where grammar requires them, especially before a noun: `high-speed imaging`, `two-phase flow`, and `current-density dependence`. Avoid inventing or stacking compounds that obscure the underlying nouns.
 
 - Write ordinary noun phrases as `flow boiling`, `vapor film`, `heat transfer`, and `phase change` unless a target journal's style guide specifies otherwise.
 - Recast densely hyphenated modifiers into a short clause when that is clearer. For example, replace `current-density-regulated morphology` with `morphology regulated by current density` when the mechanism needs emphasis.
-- Avoid em dashes in technical prose. Use a period, comma, colon, parentheses, or a subordinate clause according to the logical relationship. This does not apply to a minus sign, a numeric range, or a required mathematical symbol.
+- Avoid unspaced em dashes in technical prose. Use a period, comma, colon, parentheses, or a subordinate clause according to the logical relationship. If a parenthetical dash is retained and the target style permits it, put a space on both sides: `the dryout transition – not the absolute heat flux – governed the acoustic response`.
+- Treat parenthetical dashes separately from numeric ranges and mathematical notation. Follow the target journal's style for a range such as `10-20 kPa` or `10–20 kPa`; do not add parenthetical spaces inside a range. Preserve a required minus sign or mathematical symbol.
 
 ## Final Editorial Check
 
-Before delivery, perform a targeted search for `conversely`, forms of `establish`, em dashes, and repeated hyphenated compounds. Review each occurrence in context. The objective is not a zero count; it is precise, varied, readable writing whose claims match the evidence.
+Before delivery, perform a targeted search for `conversely`, forms of `enable` and `establish`, `unusually`, `together`, dash characters, and repeated hyphenated compounds. Review each occurrence in context. The objective is not a zero count; it is precise, varied, readable writing whose claims match the evidence.
+
+When the full plugin is available, the coordinator's `audit_technical_writing.py` helper can inventory these terms and dash forms in a UTF-8 plain-text, Markdown, or LaTeX draft. The report cannot determine whether a phrase is field-standard or whether prose is AI-generated. Use it to focus the human editorial review.

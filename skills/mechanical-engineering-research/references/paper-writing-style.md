@@ -36,9 +36,9 @@ Use a dense but logical abstract structure:
 3. Approach: one or two sentences naming the experimental, numerical, modeling, AI/ML, or diagnostic method.
 4. Validation or analysis scope: one sentence on datasets, surfaces, regimes, operating conditions, benchmark comparisons, or validation approach.
 5. Key findings: two to four concrete findings with metrics, trends, regimes, or mechanisms.
-6. Significance: one final sentence on what the method or result enables.
+6. Significance: one final sentence on the specific capability, design implication, or physical understanding supported by the result.
 
-Avoid starting the abstract with broad generic statements if a specific research need is available. Avoid ending with only "results are discussed"; end with what is learned or enabled.
+Avoid starting the abstract with broad generic statements if a specific research need is available. Avoid ending with only "results are discussed"; end with what is learned, quantified, or made possible in the tested setting.
 
 When the evidence supports it, report two to three primary quantitative findings in the abstract. Choose the main comparison, validated range, uncertainty, or performance metric rather than incidental experimental detail.
 
@@ -76,7 +76,6 @@ Prefer concrete contribution verbs only when the evidence supports them:
 - reveals
 - identifies
 - resolves
-- enables
 
 Avoid vague verbs such as "explores" unless the work is explicitly exploratory.
 
@@ -159,7 +158,7 @@ Use this sequence:
 4. Report metrics with engineering interpretation.
 5. Analyze error distribution, regime dependence, failure cases, or latent variables.
 6. Connect the model output to physical features, thermal resistance, heat flux, bubble dynamics, interface motion, or design parameters.
-7. State what the model enables: faster design, nonintrusive measurement, real-time monitoring, mechanism identification, or reduced experimental/CFD burden.
+7. State the model's specific physical or practical consequence, such as reducing design-screening time, measuring an otherwise inaccessible quantity, supporting real-time monitoring, identifying a mechanism, or reducing experimental/CFD burden.
 
 When discussing latent spaces, modes, or features, explicitly connect them to recognizable physical behavior.
 

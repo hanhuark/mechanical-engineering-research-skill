@@ -33,4 +33,4 @@ Methods must make the work reproducible: facility/model details, procedure, data
 
 ## Editorial Safeguards
 
-Do not make abstracts into compressed result tables. Use only the quantitative anchors needed to convey the main result; prioritize the problem, gap, approach, central finding, and implication. Before delivery, make an editorial pass for formulaic contrast words, vague forms of `establish`, unnecessary hyphenated compounds, and em-dash clauses. Use the rules in `references/anti-formulaic-writing.md`; review each occurrence in context rather than applying blind word bans.
+Do not make abstracts into compressed result tables. Use only the quantitative anchors needed to convey the main result; prioritize the problem, gap, approach, central finding, and implication. Before delivery, make an editorial pass for unfamiliar or undefined labels, repeated vague forms of `enable` and `establish`, `unusually`, `together`, unnecessary hyphenated compounds, and dash forms. Use the rules in `references/anti-formulaic-writing.md`; review each occurrence in context rather than applying blind word bans or treating a style signal as authorship evidence.

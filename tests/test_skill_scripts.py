@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import csv
 import hashlib
+import json
 import subprocess
 import sys
 import tempfile
@@ -13,6 +14,9 @@ ROOT = Path(__file__).resolve().parents[1]
 LATEX_AUDIT = ROOT / "skills" / "mechanical-engineering-research" / "scripts" / "audit_latex_project.py"
 MANIFEST_AUDIT = ROOT / "skills" / "mechanical-engineering-research" / "scripts" / "audit_data_manifest.py"
 STYLE_AUDIT = ROOT / "skills" / "mechanical-engineering-research" / "scripts" / "audit_style_calibration.py"
+TECHNICAL_WRITING_AUDIT = (
+    ROOT / "skills" / "mechanical-engineering-research" / "scripts" / "audit_technical_writing.py"
+)
 
 
 class SkillScriptTests(unittest.TestCase):
@@ -124,6 +128,32 @@ class SkillScriptTests(unittest.TestCase):
             self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
             self.assertIn("Style-calibration corpus audit passed.", result.stdout)
             self.assertIn("avoid 'panel'", result.stdout)
+
+    def test_technical_writing_audit_reports_lazy_terms_and_dash_forms(self) -> None:
+        with tempfile.TemporaryDirectory() as folder:
+            draft = Path(folder) / "draft.md"
+            draft.write_text(
+                "The method enables imaging and enabled direct comparison. "
+                "This establishes the result unusually quickly. Taken together, "
+                "the flow-boiling data support the claim—without a stated baseline. "
+                "The tested range was 10 – 20 kPa.",
+                encoding="utf-8",
+            )
+            result = subprocess.run(
+                [sys.executable, str(TECHNICAL_WRITING_AUDIT), str(draft), "--json"],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            report = json.loads(result.stdout)
+            self.assertEqual(report["lazy_term_counts"]["enable"], 2)
+            self.assertEqual(report["lazy_term_counts"]["establish"], 1)
+            self.assertEqual(report["lazy_term_counts"]["unusually"], 1)
+            self.assertEqual(report["lazy_term_counts"]["together"], 1)
+            self.assertEqual(report["dash_forms"]["unspaced_em_dash"], 1)
+            self.assertEqual(report["dash_forms"]["spaced_en_dash"], 1)
+            self.assertIn("flow-boiling", report["hyphenated_compounds"])
 
 
 if __name__ == "__main__":

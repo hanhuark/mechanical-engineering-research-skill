@@ -151,6 +151,7 @@ def validate_skill_resources() -> None:
         "skills/mechanical-engineering-research/scripts/audit_latex_project.py",
         "skills/mechanical-engineering-research/scripts/audit_data_manifest.py",
         "skills/mechanical-engineering-research/scripts/audit_style_calibration.py",
+        "skills/mechanical-engineering-research/scripts/audit_technical_writing.py",
         "skills/mechanical-engineering-research/assets/templates/claim-evidence-ledger.csv",
         "skills/mechanical-engineering-research/assets/templates/symbol-unit-convention-ledger.csv",
         "skills/mechanical-engineering-research/assets/templates/data-rights-manifest.csv",
@@ -179,7 +180,9 @@ def validate_skill_resources() -> None:
         ],
         "skills/mechanical-engineering-research/references/anti-formulaic-writing.md": [
             "Use quantitative results selectively",
-            "Avoid em dashes in technical prose",
+            "Term Legitimacy",
+            "Vague And Repeated Terms",
+            "Avoid unspaced em dashes in technical prose",
             "not a zero count",
         ],
         "skills/mechanical-engineering-research/references/scientific-figure-and-artifact-qa.md": [
