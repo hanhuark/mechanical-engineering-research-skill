@@ -188,6 +188,8 @@ def validate_skill_resources() -> None:
         ],
         "skills/mechanical-engineering-research/references/scientific-figure-and-artifact-qa.md": [
             "Write captions as complete, descriptive prose",
+            "Default Word Format",
+            "Times New Roman, 11 pt",
             "max, k=2 uncertainty",
         ],
         "skills/mechanical-engineering-research/references/han-hu-research-style.md": [
