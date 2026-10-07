@@ -14,6 +14,8 @@ Build a research story rather than a sequence of paper summaries. Every paragrap
 - For critical literature synthesis, read `references/literature-review.md`.
 - For journal-paper structure and results-led storytelling, read `references/paper-writing-style.md`.
 - For section-specific technical writing, methods, DOE, and figure discussion, read `references/technical-writing-analysis.md`.
+- For equation explanations, claim-evidence checks, methods completeness, and figure or equation narratives, read `references/technical-argument-audit.md` before a final prose-only pass.
+- For a clarity pass focused on reader understanding rather than formulaic compression, read `references/technical-prose-clarity.md`.
 - When matching the calibrated research style and its evidence boundaries, read `references/han-hu-research-style.md`.
 - For a final pass against formulaic AI-like drafting habits, read `references/anti-formulaic-writing.md`.
 
