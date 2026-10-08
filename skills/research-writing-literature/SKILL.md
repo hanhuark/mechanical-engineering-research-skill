@@ -9,6 +9,8 @@ description: Write and revise rigorous research narratives, literature reviews, 
 
 Build a research story rather than a sequence of paper summaries. Every paragraph needs a central topic, normally in its first sentence; each later sentence must develop, support, qualify, or transition from it.
 
+Before a substantial draft or structural revision, identify the reader, the decision or scientific understanding the section must support, the evidence that carries the central claim, and what the reader should know after the section. Write the structure from that reader-to-evidence path instead of filling a generic manuscript template.
+
 ## Route To References
 
 - For critical literature synthesis, read `references/literature-review.md`.
