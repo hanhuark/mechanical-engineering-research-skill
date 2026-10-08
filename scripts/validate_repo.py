@@ -204,6 +204,13 @@ def validate_skill_resources() -> None:
         "skills/mechanical-engineering-research/references/manuscript-revision-submission.md": [
             "Do not substitute a passive limitation statement",
             "Recommend the substantive response",
+            "private revision roadmap",
+        ],
+        "skills/mechanical-engineering-research/references/research-workflow-and-revision.md": [
+            "Seven Stages",
+            "Build The Evidence Map",
+            "revision roadmap",
+            "Minimal Handoff Record",
         ],
     }
     for path, required_phrases in style_files.items():
@@ -231,6 +238,7 @@ def validate_skill_resources() -> None:
             fail(f"{skill_path} is missing its focused purpose")
 
     require_file("skills/research-writing-literature/references/anti-formulaic-writing.md")
+    require_file("skills/mechanical-engineering-research/references/research-workflow-and-revision.md")
     for required in [
         "skills/research-schematic-design/references/schematic-brief.md",
         "skills/research-schematic-design/references/schematic-workflow.md",

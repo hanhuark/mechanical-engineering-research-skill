@@ -9,6 +9,8 @@ All notable changes to the Thermal-Fluid Research Workflow Plugin are documented
 - Added reader-first manuscript guidance derived from iterative technical-paper revision: distinguish the research gap from the present contribution, state the consequence of the gap, and explain what data integration or modeling is used to accomplish.
 - Added abstract, introduction, and conclusion checks that reduce redundant, indirect, terminology-heavy prose while preserving technical meaning and claim boundaries.
 - Updated Han Hu drafting and revision commands to require a concise narrative audit for high-level manuscript sections.
+- Added an integrated seven-stage workflow for substantial research documents: decision framing, evidence mapping, narrative architecture, technical development, evidence-to-reader drafting, revision auditing, and package verification.
+- Added literature-role mapping and revision-roadmap guidance so background sources, key comparisons, conflicting evidence, reviewer comments, and required technical actions remain traceable.
 
 ## v0.4.0 - 2026-09-08
 

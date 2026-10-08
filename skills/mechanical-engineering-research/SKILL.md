@@ -20,6 +20,8 @@ Use this skill as the cross-cutting coordinator when a request spans multiple re
 
 The coordinator retains the evidence and integrity gates below. Do not load all specialist skills by default; select the smallest combination that fits the actual deliverable.
 
+For a substantial manuscript, review article, proposal, thesis chapter, or major revision, use the integrated workflow in [research-workflow-and-revision.md](references/research-workflow-and-revision.md). It coordinates the specialist skills around a shared evidence map, narrative architecture, revision roadmap, and final verification. Do not force a focused task through the full workflow.
+
 ## Core Workflow
 
 1. Define the engineering decision or research question.
@@ -62,6 +64,7 @@ Read only the references needed for the task.
 | Task | Read |
 | --- | --- |
 | Research brief or trade study | [brief-template.md](references/brief-template.md) |
+| End-to-end manuscript, review, proposal, thesis chapter, or major revision | [research-workflow-and-revision.md](references/research-workflow-and-revision.md) |
 | Technical analysis, DOE, plotting, or results discussion | [technical-writing-analysis.md](references/technical-writing-analysis.md) |
 | Equation explanations, claim-evidence audit, methods completeness, or figure/equation narrative | [technical-argument-audit.md](../research-writing-literature/references/technical-argument-audit.md) |
 | Reader-focused technical-prose audit | [technical-prose-clarity.md](../research-writing-literature/references/technical-prose-clarity.md) |
