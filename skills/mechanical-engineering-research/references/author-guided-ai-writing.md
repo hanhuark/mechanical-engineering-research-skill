@@ -6,7 +6,7 @@ This is a writing-quality workflow, not an AI-authorship detector. It does not p
 
 ## Core principle
 
-The primary purpose of technical writing is to help an informed reader understand the problem, evidence, mechanism, conclusion, and appropriate use of the conclusion. Correctness, completeness, and defensibility are necessary constraints, but they do not justify prose that obscures the point.
+The purpose of technical writing is to make people understand. Correctness, completeness, and defensibility matter, but they do not justify prose that obscures the point.
 
 Keep the author responsible for **what the document argues** and use AI to help express, organize, inspect, and revise that argument. A useful loop is:
 
