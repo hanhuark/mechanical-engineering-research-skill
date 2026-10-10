@@ -4,6 +4,11 @@ All notable changes to the Thermal-Fluid Research Workflow Plugin are documented
 
 ## Unreleased
 
+### Added
+
+- Added an author-guided AI writing workflow that turns pre-draft scientific guidance and post-draft human review into a repeatable story brief, claim-evidence map, reader-recovery review, and revision sequence.
+- Added the `me-author-guided-writing` prompt for manuscripts, proposals, reports, reviews, and responses developed with AI assistance.
+
 ### Changed
 
 - Added reader-first manuscript guidance derived from iterative technical-paper revision: distinguish the research gap from the present contribution, state the consequence of the gap, and explain what data integration or modeling is used to accomplish.
