@@ -18,6 +18,8 @@ Do not ask AI to infer the paper's contribution, mechanism, or claim boundary fr
 
 Before retaining a sentence, ask whether it helps the reader understand something necessary at that point in the argument. Remove or relocate detail that only repeats, defensively qualifies, or advertises the work. Put methodological detail in methods, limits beside the claim they bound, and secondary robustness checks in an appropriate figure, table, appendix, or supplement. Do not compress several ideas into a single modifier-heavy sentence merely to make the writing look complete.
 
+Apply a sentence-weight check: the main clause should carry most of the sentence's value. A long trailing list of attributes, inputs, or caveats must change the reader's interpretation enough to justify its space. If the first half already conveys the point and the second half only makes it sound more complete, cut the tail or move the necessary detail to a later sentence.
+
 ## 1. Build a short author story brief
 
 Before drafting a substantial section, record the following in plain technical language. The author may answer in bullets. Unknown items stay marked as unknown rather than being filled with plausible AI text.
