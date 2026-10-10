@@ -6,6 +6,8 @@ This is a writing-quality workflow, not an AI-authorship detector. It does not p
 
 ## Core principle
 
+The primary purpose of technical writing is to help an informed reader understand the problem, evidence, mechanism, conclusion, and appropriate use of the conclusion. Correctness, completeness, and defensibility are necessary constraints, but they do not justify prose that obscures the point.
+
 Keep the author responsible for **what the document argues** and use AI to help express, organize, inspect, and revise that argument. A useful loop is:
 
 ```text
@@ -13,6 +15,8 @@ author story brief -> evidence map -> AI structural draft -> author decision rev
 ```
 
 Do not ask AI to infer the paper's contribution, mechanism, or claim boundary from a folder of sources without an author decision point. That shortcut often produces fluent prose with generic importance statements, modifier-heavy labels, and conclusions that do not follow cleanly from the evidence.
+
+Before retaining a sentence, ask whether it helps the reader understand something necessary at that point in the argument. Remove or relocate detail that only repeats, defensively qualifies, or advertises the work. Put methodological detail in methods, limits beside the claim they bound, and secondary robustness checks in an appropriate figure, table, appendix, or supplement. Do not compress several ideas into a single modifier-heavy sentence merely to make the writing look complete.
 
 ## 1. Build a short author story brief
 
