@@ -1,5 +1,8 @@
 # Mechanical Engineering Research Skill | Thermal-Fluid Research Workflow Plugin
 
+Repository scope, evidence, and reuse boundaries are also available in the
+[NED3 resource manifest](.ned3/resource-manifest-v0.1.json).
+
 [English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md)
 
 **A domain-rigor layer and modular skill suite for thermal-fluid mechanical engineering research with AI agents.**
