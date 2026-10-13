@@ -176,6 +176,7 @@ class SkillScriptTests(unittest.TestCase):
             self.assertEqual(len(report["reader_focus"]["crowded_headings"]), 1)
             self.assertEqual(len(report["reader_focus"]["comma_heavy_sentences"]), 1)
             self.assertEqual(len(report["reader_focus"]["stacked_modifier_sentences"]), 1)
+            self.assertEqual(len(report["reader_focus"]["parallel_detail_sentences"]), 1)
 
 
 if __name__ == "__main__":

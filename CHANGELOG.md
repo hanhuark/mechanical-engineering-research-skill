@@ -11,6 +11,7 @@ All notable changes to the Thermal-Fluid Research Workflow Plugin are documented
 
 ### Changed
 
+- Added a parallel-detail check: consolidate lists of more than three items into the specific higher-level concept that carries the technical point, unless the individual items are needed for comparison, reproduction, boundary assessment, uncertainty treatment, or a distinct action.
 - Added reader-first manuscript guidance derived from iterative technical-paper revision: distinguish the research gap from the present contribution, state the consequence of the gap, and explain what data integration or modeling is used to accomplish.
 - Added abstract, introduction, and conclusion checks that reduce redundant, indirect, terminology-heavy prose while preserving technical meaning and claim boundaries.
 - Updated Han Hu drafting and revision commands to require a concise narrative audit for high-level manuscript sections.
