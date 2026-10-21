@@ -6,6 +6,7 @@ All notable changes to the Thermal-Fluid Research Workflow Plugin are documented
 
 ### Added
 
+- Added a proposal budget and budget-justification reference that builds the budget from sponsor rules and the institution's current workbook, states a source and effective date for every rate, separates participant support and workshop costs, confirms the subaward indirect-cost threshold, and reconciles the justification with the workbook and the narrative.
 - Added an author-guided AI writing workflow that turns pre-draft scientific guidance and post-draft human review into a repeatable story brief, claim-evidence map, reader-recovery review, and revision sequence.
 - Added the `me-author-guided-writing` prompt for manuscripts, proposals, reports, reviews, and responses developed with AI assistance.
 

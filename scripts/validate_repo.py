@@ -239,6 +239,8 @@ def validate_skill_resources() -> None:
 
     require_file("skills/research-writing-literature/references/anti-formulaic-writing.md")
     require_file("skills/mechanical-engineering-research/references/research-workflow-and-revision.md")
+    require_file("skills/mechanical-engineering-research/references/budget-and-justification.md")
+    require_file("skills/research-proposal-development/references/budget-and-justification.md")
     for required in [
         "skills/research-schematic-design/references/schematic-brief.md",
         "skills/research-schematic-design/references/schematic-workflow.md",
