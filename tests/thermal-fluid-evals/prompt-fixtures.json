@@ -158,5 +158,16 @@
       "connect derivation to code and sanity checks",
       "include a misconception and transfer task"
     ]
+  },
+  {
+    "id": "proposal-budget-justification",
+    "prompt": "Write the budget justification for a two-year federal planning proposal with a $200,000 cap that includes a subaward, two community workshops, one graduate assistant, and conference travel, using the university's budget workbook.",
+    "expected_checks": [
+      "extract the cap, cost-sharing rule, and required meeting travel from the solicitation",
+      "state the source and effective date for each rate, stipend, fare, and per diem",
+      "budget participant support only for non-project participants and exclude it from the indirect-cost base",
+      "confirm the subaward threshold used in the indirect-cost base with the institution",
+      "recompute category, year, indirect-cost, and project totals against the workbook and the narrative"
+    ]
   }
 ]
