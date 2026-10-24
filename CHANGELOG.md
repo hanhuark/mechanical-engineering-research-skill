@@ -12,6 +12,7 @@ All notable changes to the Thermal-Fluid Research Workflow Plugin are documented
 
 ### Changed
 
+- Added sentence-construction and emphasis guidance: subordinate clause-level parallel series so the distinctive claim occupies the main clause, distinguish genuine enumerations from rhetorical parallelism, require short sentences to carry specific content, remove definitional asides, prefer formal causal connectives over `because` and `so`, and avoid the binary `X rather than Y` contrast as a default connective.
 - Added a parallel-detail check: consolidate lists of more than three items into the specific higher-level concept that carries the technical point, unless the individual items are needed for comparison, reproduction, boundary assessment, uncertainty treatment, or a distinct action.
 - Added reader-first manuscript guidance derived from iterative technical-paper revision: distinguish the research gap from the present contribution, state the consequence of the gap, and explain what data integration or modeling is used to accomplish.
 - Added abstract, introduction, and conclusion checks that reduce redundant, indirect, terminology-heavy prose while preserving technical meaning and claim boundaries.
