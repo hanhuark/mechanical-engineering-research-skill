@@ -6,12 +6,14 @@ All notable changes to the Thermal-Fluid Research Workflow Plugin are documented
 
 ### Added
 
+- Added a proposal budget and budget-justification reference that builds the budget from sponsor rules and the institution's current workbook, states a source and effective date for every rate, separates participant support and workshop costs, confirms the subaward indirect-cost threshold, and reconciles the justification with the workbook and the narrative.
 - Added an author-guided AI writing workflow that turns pre-draft scientific guidance and post-draft human review into a repeatable story brief, claim-evidence map, reader-recovery review, and revision sequence.
 - Added the `me-author-guided-writing` prompt for manuscripts, proposals, reports, reviews, and responses developed with AI assistance.
 
 ### Changed
 
 - Added a caption-scope rule: a caption describes the figure, including the quantities, conditions, subfigure mapping, visual encodings, and the protocol or calibration behind the data, while results, interpretation, and the justification for a plotting choice belong in the section that argues from them; values already printed on the figure are not restated, and a bound that qualifies a claim moves with that claim.
+- Added sentence-construction and emphasis guidance: subordinate clause-level parallel series so the distinctive claim occupies the main clause, distinguish genuine enumerations from rhetorical parallelism, require short sentences to carry specific content, remove definitional asides, prefer formal causal connectives over `because` and `so`, and avoid the binary `X rather than Y` contrast as a default connective.
 - Added a parallel-detail check: consolidate lists of more than three items into the specific higher-level concept that carries the technical point, unless the individual items are needed for comparison, reproduction, boundary assessment, uncertainty treatment, or a distinct action.
 - Added reader-first manuscript guidance derived from iterative technical-paper revision: distinguish the research gap from the present contribution, state the consequence of the gap, and explain what data integration or modeling is used to accomplish.
 - Added abstract, introduction, and conclusion checks that reduce redundant, indirect, terminology-heavy prose while preserving technical meaning and claim boundaries.
