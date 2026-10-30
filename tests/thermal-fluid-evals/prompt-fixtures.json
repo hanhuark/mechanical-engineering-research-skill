@@ -169,5 +169,16 @@
       "confirm the subaward threshold used in the indirect-cost base with the institution",
       "recompute category, year, indirect-cost, and project totals against the workbook and the narrative"
     ]
+  },
+  {
+    "id": "contrast-frame-rewrite",
+    "prompt": "Revise this proposal sentence in Han Hu's style: 'Availability in the hub is organized as a lifecycle rather than a download portal (Fig. 4).' Then check the rest of the section for similar sentences.",
+    "expected_checks": [
+      "remove the 'A rather than B' frame when B is an alternative no reader proposed",
+      "name the actor and the action, as in 'The hub makes datasets available through four linked activities that repeat throughout the project'",
+      "replace abstract subject-verb pairs such as 'availability is organized as' with common phrasing",
+      "treat 'A, not B' and 'not B but A' as the same pattern and keep a contrast only for a real competing option",
+      "keep the figure reference and leave the cycle concept to the figure and the following sentence"
+    ]
   }
 ]
