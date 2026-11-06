@@ -12,6 +12,8 @@ All notable changes to the Thermal-Fluid Research Workflow Plugin are documented
 
 ### Changed
 
+- Refined concise section-revision guidance: describe figures before interpreting them, combine plots that support one argument, integrate essential table notes into the main text, and reconcile conclusions with the final results. Added checks for model identity, attribution scope, aggregation, and latency versus throughput, with synthetic evaluation scenarios.
+
 - Added a caption-scope rule: a caption describes the figure, including the quantities, conditions, subfigure mapping, visual encodings, and the protocol or calibration behind the data, while results, interpretation, and the justification for a plotting choice belong in the section that argues from them; values already printed on the figure are not restated, and a bound that qualifies a claim moves with that claim.
 - Added Han Hu style guidance for noun-first technical phrasing, evidence-specific vocabulary, and restraint in colon and semicolon clauses. The guidance replaces generic interrogative constructions and catch-all uses of `record` with the actual quantity, method, documentation, or evidence object.
 - Added sentence-construction and emphasis guidance: subordinate clause-level parallel series so the distinctive claim occupies the main clause, distinguish genuine enumerations from rhetorical parallelism, require short sentences to carry specific content, remove definitional asides, prefer formal causal connectives over `because` and `so`, and avoid the binary `X rather than Y` contrast as a default connective.
