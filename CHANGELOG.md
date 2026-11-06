@@ -12,6 +12,7 @@ All notable changes to the Thermal-Fluid Research Workflow Plugin are documented
 
 ### Changed
 
+- Replaced the binary-contrast guidance with a rule against defining a subject by what it is not. The frames `A rather than B`, `A, not B`, and `not B but A` are kept only when B is a real competing option. Otherwise the sentence names the actor, the action, and the object in common phrasing, with a before-and-after example. The diagnostic pass now also counts `, not`, `not … but`, and `instead of`.
 - Refined concise section-revision guidance: describe figures before interpreting them, combine plots that support one argument, integrate essential table notes into the main text, and reconcile conclusions with the final results. Added checks for model identity, attribution scope, aggregation, and latency versus throughput, with synthetic evaluation scenarios.
 
 - Added a caption-scope rule: a caption describes the figure, including the quantities, conditions, subfigure mapping, visual encodings, and the protocol or calibration behind the data, while results, interpretation, and the justification for a plotting choice belong in the section that argues from them; values already printed on the figure are not restated, and a bound that qualifies a claim moves with that claim.
