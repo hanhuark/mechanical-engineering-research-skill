@@ -180,5 +180,49 @@
       "treat 'A, not B' and 'not B but A' as the same pattern and keep a contrast only for a real competing option",
       "keep the figure reference and leave the cycle concept to the figure and the following sentence"
     ]
+  },
+  {
+    "id": "concise-linked-figure-revision",
+    "prompt": "Synthetic writing case: revise a results subsection whose first two plots show the same pressure-drop trend and whose third shows a separate failure regime. The draft jumps to mechanisms without describing axes or observations and repeats the sample-size and uncertainty explanation below a table. The author wants concise connected prose and a separate Word document.",
+    "expected_checks": [
+      "open with the purpose of the comparison when needed",
+      "describe quantities and conditions before observations, explanation, and conclusion",
+      "combine the first two plots while retaining the distinct failure discussion",
+      "move essential explanatory table notes into the main text while preserving required footnotes",
+      "preserve numeric values and the original document and visually inspect the replacement"
+    ]
+  },
+  {
+    "id": "sequence-attribution-scope",
+    "prompt": "Synthetic model case: a 12 ms sequence model is tested by averaging or reordering its images, and a zero change is claimed for a final-image baseline. The conclusion uses these tests to explain the superior error of a different 240 ms model and interprets a branch variance ratio as a unique measure of motion.",
+    "expected_checks": [
+      "keep architecture, task, context, and checkpoint identities explicit",
+      "check whether averaging alters spatial content and reordering changes the final input",
+      "define the variance ratio and treatment of covariance",
+      "bound the attribution to the tested configuration and distinguish sensitivity from mechanism",
+      "identify missing controls without claiming that a wording correction validates the mechanism"
+    ]
+  },
+  {
+    "id": "inference-time-versus-throughput",
+    "prompt": "Synthetic benchmark: a model takes 0.4 ms per GPU forward pass and 1.4 ms on one CPU core. A batch of 16 takes 4.8 ms total. The draft says no configuration fits the frame interval at 500 fps and calls the 0.3 ms amortized batch time an individual response latency. Training epoch time appears only in prose, yet a reviewer asks which table reports it.",
+    "expected_checks": [
+      "compute the 500 fps frame interval as 2 ms and correct both forward-pass comparisons",
+      "distinguish 4.8 ms batch execution from 0.3 ms amortized throughput cost",
+      "state the prediction-update assumption and excluded acquisition, preprocessing, and waiting costs",
+      "identify training time as text-only rather than inventing a table entry",
+      "do not present manuscript-reported timing as independently verified log evidence"
+    ]
+  },
+  {
+    "id": "conclusion-after-section-revision",
+    "prompt": "Synthetic manuscript revision: the results now report mean signed bias with variability across training seeds and inconsistent transfer to a new geometry. The old conclusion says all predictions meet the mean-bias bound, seed variability proves experimental repeatability, and the longest tested sequence is optimal because training hit its epoch cap. Shorten the conclusion.",
+    "expected_checks": [
+      "preserve the distinction between a mean bias and individual prediction errors",
+      "separate seed variability from independent experimental repeatability",
+      "retain the transfer boundary and reconcile the conclusion with revised results",
+      "do not infer an optimum or guaranteed test improvement from the training cap",
+      "retain only the principal numerical findings and necessary uncertainty without a results catalog"
+    ]
   }
 ]
