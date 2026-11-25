@@ -222,6 +222,10 @@ def validate_skill_resources() -> None:
             "author-decision-record.md",
             "one unit as the task",
         ],
+        "skills/research-writing-literature/SKILL.md": [
+            "interview me",
+            "author-interview-question-bank.md",
+        ],
         "commands/me-author-guided-writing.md": [
             "Do not construct the author's answers",
             "author-decision-record.md",
