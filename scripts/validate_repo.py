@@ -159,6 +159,7 @@ def validate_skill_resources() -> None:
         "skills/mechanical-engineering-research/assets/templates/response-to-reviewers.md",
         "skills/mechanical-engineering-research/assets/templates/reproducibility-manifest.json",
         "skills/mechanical-engineering-research/assets/templates/benchmark-dataset-readme.md",
+        "skills/mechanical-engineering-research/assets/templates/author-decision-record.md",
     ]:
         require_file(required)
     load_json("skills/mechanical-engineering-research/assets/templates/reproducibility-manifest.json")
