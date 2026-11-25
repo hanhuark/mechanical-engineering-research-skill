@@ -222,6 +222,11 @@ def validate_skill_resources() -> None:
             "author-decision-record.md",
             "one unit as the task",
         ],
+        "commands/me-author-guided-writing.md": [
+            "Do not construct the author's answers",
+            "author-decision-record.md",
+            "consistency pass",
+        ],
         "skills/mechanical-engineering-research/references/author-interview-question-bank.md": [
             "A complete answer is specific, comparative, bounded, and traceable",
             "Round 1: Story",
