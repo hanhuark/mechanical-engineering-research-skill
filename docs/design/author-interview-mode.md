@@ -1,6 +1,6 @@
 # Design: Author Interview Mode for AI-Assisted Technical Writing
 
-Status: approved design, November 25, 2026. Implementation on branch `claude/author-interview-mode`.
+Status: approved November 25, 2026; implemented on branch `claude/author-interview-mode`. Live dry run pending.
 
 ## Problem
 
