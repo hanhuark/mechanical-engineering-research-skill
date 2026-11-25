@@ -213,6 +213,15 @@ def validate_skill_resources() -> None:
             "revision roadmap",
             "Minimal Handoff Record",
         ],
+        "skills/mechanical-engineering-research/references/author-guided-ai-writing.md": [
+            "## 1. Interview the author",
+            "Story-level questions carry no suggested answer",
+            "Facts are the AI's job; decisions are the author's",
+            "at most two follow-ups",
+            "[OPEN",
+            "author-decision-record.md",
+            "one unit as the task",
+        ],
         "skills/mechanical-engineering-research/references/author-interview-question-bank.md": [
             "A complete answer is specific, comparative, bounded, and traceable",
             "Round 1: Story",
