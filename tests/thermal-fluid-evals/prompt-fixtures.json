@@ -224,5 +224,47 @@
       "do not infer an optimum or guaranteed test improvement from the training cap",
       "retain only the principal numerical findings and necessary uncertainty without a results catalog"
     ]
+  },
+  {
+    "id": "author-interview-full-manuscript-intake",
+    "prompt": "Synthetic request in one long message: the full text of a pool-boiling manuscript on a coated copper surface, five figure captions, the measured heat-flux range and thermocouple sampling rate, and the comment 'Please revise the whole paper so it reads better and the contribution is clearer.'",
+    "expected_checks": [
+      "do not draft or revise any section before the author interview",
+      "open with a numbered round of three to five story-level questions (reader takeaway, reader, gap and barrier, claim ceiling, carrying figure)",
+      "give no suggested answer for the story-level questions",
+      "extract the heat-flux range, sampling rate, and figure contents from the material instead of asking the author for them",
+      "do not ask navigation or approval questions such as whether to move to the next section",
+      "propose creating author-decision-record.md in the manuscript folder"
+    ]
+  },
+  {
+    "id": "author-interview-vague-answer",
+    "prompt": "Synthetic interview turn: asked what a reader will know after the paper that they could not know before, the author answers 'It helps us better understand boiling on coated surfaces.'",
+    "expected_checks": [
+      "ask a follow-up that requests only the missing elements: the quantity, the comparison, and the regime",
+      "quote the author's answer when asking the follow-up",
+      "do not substitute an AI-written key message for the author's answer",
+      "record the question as an open decision if the answer remains vague after two follow-ups"
+    ]
+  },
+  {
+    "id": "author-interview-unanswerable-figure",
+    "prompt": "Synthetic interview turn: asked what Fig. 5 establishes beyond the plotted trend and what alternative explanation it excludes, the author answers 'I am not sure; my student made this figure.'",
+    "expected_checks": [
+      "record an open decision with an ID, the question, why it matters, and what would resolve it",
+      "keep a visible placeholder such as [OPEN D1: what Fig. 5 establishes] in any affected text",
+      "do not write an interpretation of Fig. 5 that the author has not confirmed",
+      "suggest a concrete way to resolve it, such as reviewing the figure's source data with the student"
+    ]
+  },
+  {
+    "id": "author-interview-single-paragraph",
+    "prompt": "Synthetic request: the author pastes one results paragraph discussing a bubble-departure-frequency figure and asks for a tighter revision. In a second variant, the same request ends with 'no interview'.",
+    "expected_checks": [
+      "ask the short form of two to three questions: the paragraph's takeaway, its evidence, and its claim ceiling",
+      "skip questions the decision record already answers",
+      "in the 'no interview' variant, revise directly without questions",
+      "use the rest of the manuscript, if supplied, only as reference and revise only the pasted paragraph"
+    ]
   }
 ]

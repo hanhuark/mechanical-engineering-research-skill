@@ -9,6 +9,7 @@ All notable changes to the Thermal-Fluid Research Workflow Plugin are documented
 - Added a proposal budget and budget-justification reference that builds the budget from sponsor rules and the institution's current workbook, states a source and effective date for every rate, separates participant support and workshop costs, confirms the subaward indirect-cost threshold, and reconciles the justification with the workbook and the narrative.
 - Added an author-guided AI writing workflow that turns pre-draft scientific guidance and post-draft human review into a repeatable story brief, claim-evidence map, reader-recovery review, and revision sequence.
 - Added the `me-author-guided-writing` prompt for manuscripts, proposals, reports, reviews, and responses developed with AI assistance.
+- Added an author interview to the author-guided writing workflow, adapted from the round-based `grilling` skill. The AI reads the supplied material as reference, extracts its facts, and asks the author numbered rounds of questions from the story down to each figure. Story-level questions carry no suggested answer, vague answers get at most two follow-ups that ask only for the missing element, and unanswered questions become visible `[OPEN]` placeholders. Answers go into an author decision record kept with the manuscript, and drafting proceeds one unit at a time from that record, followed by a separate consistency pass. Includes a question bank, a record template, and four synthetic eval fixtures.
 
 ### Changed
 
