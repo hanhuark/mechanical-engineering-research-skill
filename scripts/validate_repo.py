@@ -213,6 +213,11 @@ def validate_skill_resources() -> None:
             "revision roadmap",
             "Minimal Handoff Record",
         ],
+        "skills/mechanical-engineering-research/references/author-interview-question-bank.md": [
+            "A complete answer is specific, comparative, bounded, and traceable",
+            "Round 1: Story",
+            "does not establish",
+        ],
     }
     for path, required_phrases in style_files.items():
         content = require_file(path).read_text(encoding="utf-8")
