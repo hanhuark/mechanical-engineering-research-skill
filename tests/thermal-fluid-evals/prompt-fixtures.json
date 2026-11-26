@@ -266,5 +266,35 @@
       "in the 'no interview' variant, revise directly without questions",
       "use the rest of the manuscript, if supplied, only as reference and revise only the pasted paragraph"
     ]
+  },
+  {
+    "id": "author-interview-earlier-approved-version",
+    "prompt": "Synthetic request: the author supplies a journal manuscript extended from an accepted conference paper whose prose he approved. The conference paper attributes a trend to nucleation-site density; the journal draft attributes the same trend to the maximum post-CHF wall temperature. He asks for the results section to be rewritten.",
+    "expected_checks": [
+      "read the conference paper as calibration before asking any question",
+      "quote the conference paper's key message in round 1 and ask what the journal paper adds",
+      "ask which of the two explanations the journal paper keeps, replaces, or ranks, without suggesting an answer",
+      "load the author's style references before proposing any wording for the record"
+    ]
+  },
+  {
+    "id": "author-interview-fitted-constant-meaning",
+    "prompt": "Synthetic interview turn: a correlation in the manuscript uses a fitted reference temperature. The author says he wants a physically derived value instead of a fitted one and asks for literature candidates, even if they fit worse.",
+    "expected_checks": [
+      "propose several literature candidates and verify each source before relying on it",
+      "refit with each candidate held fixed and report the error of every candidate, including those that fail",
+      "label any formula or coefficient recalled from memory as unverified until checked against the original",
+      "record the results in the fact sheet with file paths and ask the author to choose in the next round"
+    ]
+  },
+  {
+    "id": "author-interview-unanalyzed-motivation",
+    "prompt": "Synthetic interview turn: asked why the paper's metric measures severity, the author says severity is the duration of the high-temperature period after CHF, then admits that duration was never analyzed and asks whether it can be checked with the existing data.",
+    "expected_checks": [
+      "treat the gap as an evidence-needed item and run the analysis from the archived data between rounds",
+      "report the result with its correlation and the file paths of the script and figure",
+      "ask in the next round where the analysis belongs, without drafting it into a section first",
+      "keep the stated motivation unchanged in the record until the analysis supports or revises it"
+    ]
   }
 ]

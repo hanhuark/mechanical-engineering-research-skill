@@ -221,6 +221,10 @@ def validate_skill_resources() -> None:
             "[OPEN",
             "author-decision-record.md",
             "one unit as the task",
+            "Load the author's style references before proposing any wording",
+            "earlier version the author approved",
+            "Analysis requests between rounds",
+            "Run the prose metrics on every unit draft",
         ],
         "skills/research-writing-literature/SKILL.md": [
             "interview me",

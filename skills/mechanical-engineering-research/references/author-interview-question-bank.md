@@ -16,6 +16,8 @@ A follow-up asks only for the missing element. Allow at most two follow-ups per 
 | Author answer | Missing element | Follow-up |
 | --- | --- | --- |
 | "To better understand boiling." | specific, comparative | Which quantity, on which surface and fluid, compared with what? |
+| "A more in-depth and quantitative analysis of X." | specific | The answer names the activity, not the finding. What did the analysis show about X, and in which direction? |
+| "H decreases with temperature," when lower H means stronger hysteresis | specific | Which way does the effect run? A metric whose direction reads backwards is an editorial question: recommend a definition that rises with the effect. |
 | "The coating improves heat transfer." | bounded, traceable | Improves which coefficient, by how much, in which heat-flux range, and in which figure? |
 | "Fig. 4 shows the mechanism." | bounded | What does Fig. 4 show directly, and which part of the mechanism is inferred? |
 | "The model is accurate." | comparative, traceable | Accurate against which data, by which error metric, and on data held out from training? |
@@ -30,7 +32,9 @@ Ask these first, with no suggested answer. Later rounds depend on them.
 4. What is the strongest claim your evidence supports, and what does it not establish?
 5. Which figure, and which subfigure, carries that claim?
 
-Reconcile the answers with the current title, abstract, and conclusion. Point out any mismatch, for example an abstract that claims a mechanism when the answer to question 4 claims an association.
+Reconcile the answers with the current title, abstract, and conclusion. Point out any mismatch, for example an abstract that claims a mechanism when the answer to question 4 claims an association. When an earlier version the author approved exists, quote its key message in question 1 and ask what the new paper adds; the answer often reveals a reframing or a competing explanation, such as a mechanism the earlier version proposed that the new evidence places downstream of another variable.
+
+For a fitted constant that carries the main claim, also ask whether the author wants a physical meaning for it. If so, propose candidates from the literature, verify each source, test each candidate with the constant fixed, and report the fit of each, including the candidates that fail.
 
 ## Round 2: Title, abstract, keywords
 

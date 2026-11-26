@@ -1,6 +1,6 @@
 # Author Decision Record
 
-Keep this file in the manuscript folder. It holds unpublished results and author decisions, so it stays with the manuscript and is not shared with tools or services outside the author's control. Update it at the end of every interview round. Drafting uses this record and the supplied material only.
+Keep this file in the manuscript folder. It holds unpublished results and author decisions and therefore stays with the manuscript, outside tools or services the author does not control. Update it at the end of every interview round. Drafting uses this record and the supplied material only.
 
 ## Header
 
