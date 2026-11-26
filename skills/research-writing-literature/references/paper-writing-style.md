@@ -24,9 +24,9 @@ Use a dense but logical abstract structure:
 3. Approach: one or two sentences naming the experimental, numerical, modeling, AI/ML, or diagnostic method.
 4. Validation or analysis scope: one sentence on datasets, surfaces, regimes, operating conditions, benchmark comparisons, or validation approach.
 5. Key findings: two to four concrete findings with metrics, trends, regimes, or mechanisms.
-6. Significance: one final sentence on the specific capability, design implication, or physical understanding supported by the result.
+6. Significance: one final sentence on the strongest physical finding, design implication, or capability supported by the result, with its scope built into the sentence.
 
-Avoid starting the abstract with broad generic statements if a specific research need is available. Avoid ending with only "results are discussed"; end with what is learned, quantified, or made possible in the tested setting.
+Avoid starting the abstract with broad generic statements if a specific research need is available. Avoid ending with only "results are discussed"; end with what is learned, quantified, or made possible in the tested setting. Do not end on a disclaimer, a data or code release statement, a workflow summary, or a count of records.
 
 When data support it, include two to three quantitative findings in the abstract. These values should represent the main comparison, range, uncertainty, or validated performance measure, not incidental experimental detail.
 
@@ -185,7 +185,7 @@ Use "indicates" for evidence-supported interpretation, "suggests" for weaker inf
 
 Use "due to" or "because" only when the mechanism is supported. Otherwise use "may be attributed to" or "is likely associated with."
 
-Avoid casual, self-referential, or manuscript-process language such as "the present work," "the current work," "this study establishes," or reader-directed phrasing. Name the technical subject and make the evidence relationship explicit.
+Avoid casual, manuscript-process, or self-evaluating language such as "this study establishes" or reader-directed phrasing. Name the technical subject and make the evidence relationship explicit. "This work", "this study", and "we" remain appropriate for scope, local definitions, purpose openers, the opening of the conclusion, and the group's own prior work.
 
 Use `Fig. 6a` rather than "panel a" for subfigures unless the journal has a conflicting house style. Apply one consistent publication font, preferably Arial when unconstrained, across related figures.
 
@@ -201,7 +201,7 @@ Use this structure:
 4. State the practical or scientific implication.
 5. Optional: note limitations and future work if important.
 
-For multi-result papers, numbered conclusions are effective. Each numbered item should contain a complete takeaway, not just a topic label.
+The author's revisions wrote the conclusion as one connected paragraph in the present tense, opening with what the paper presents and using "is shown to" for the headline findings, without figure citations or a list of validation needs. Use numbered conclusions only when the venue requires them; each item should then contain a complete takeaway, not just a topic label.
 
 Avoid broad restatement of the introduction. The conclusion should tell the reader what is now known because of this work.
 

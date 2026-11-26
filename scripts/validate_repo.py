@@ -185,6 +185,7 @@ def validate_skill_resources() -> None:
             "Vague And Repeated Terms",
             "Reader Focus And Modifier Load",
             "Avoid unspaced em dashes in technical prose",
+            "which leaves",
             "not a zero count",
         ],
         "skills/mechanical-engineering-research/references/scientific-figure-and-artifact-qa.md": [
@@ -194,6 +195,10 @@ def validate_skill_resources() -> None:
             "max, k=2 uncertainty",
         ],
         "skills/mechanical-engineering-research/references/han-hu-research-style.md": [
+            "Patterns From Author Revisions Of AI Drafts",
+            "End the abstract on the strongest physical finding",
+            "Write the conclusion as one connected paragraph",
+            "measured on prose only",
             "Use Arial for all figure text",
             "Refer to subfigures as `Fig. 6a`",
             "Do not treat combining datasets, building a map, or running a model as the innovation by itself",
