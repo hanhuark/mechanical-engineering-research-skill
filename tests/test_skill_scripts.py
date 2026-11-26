@@ -178,6 +178,33 @@ class SkillScriptTests(unittest.TestCase):
             self.assertEqual(len(report["reader_focus"]["stacked_modifier_sentences"]), 1)
             self.assertEqual(len(report["reader_focus"]["parallel_detail_sentences"]), 1)
 
+    def test_technical_writing_audit_reports_prose_metrics(self) -> None:
+        with tempfile.TemporaryDirectory() as folder:
+            draft = Path(folder) / "draft.md"
+            draft.write_text(
+                "Hysteresis rises with superheat (Fig. 8a). "
+                "The data, which collapse onto one curve, show that the limit holds because the liquid sets it; "
+                "so the scale is a property of the liquid.",
+                encoding="utf-8",
+            )
+            result = subprocess.run(
+                [sys.executable, str(TECHNICAL_WRITING_AUDIT), str(draft), "--json"],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            metrics = json.loads(result.stdout)["prose_metrics"]
+            self.assertEqual(metrics["sentence_count"], 2)
+            self.assertEqual(metrics["counts"]["which"], 1)
+            self.assertEqual(metrics["counts"]["that"], 1)
+            self.assertEqual(metrics["counts"]["because"], 1)
+            self.assertEqual(metrics["counts"]["so as connective"], 1)
+            self.assertEqual(metrics["counts"]["semicolon"], 1)
+            self.assertEqual(metrics["counts"]["inline figure pointer"], 1)
+            self.assertGreater(metrics["mean_sentence_words"], 10)
+            self.assertIn("which", metrics["per_10000_words"])
+
 
 if __name__ == "__main__":
     unittest.main()
