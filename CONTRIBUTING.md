@@ -5,7 +5,7 @@ Thank you for improving this thermal-fluid research workflow plugin.
 ## Guidelines
 
 - Keep `SKILL.md` concise and focused on routing, workflow, and reference selection.
-- Put detailed guidance in `skills/mechanical-engineering-research/references/`.
+- Put detailed guidance in `skills/mechanical-engineering-research/references/`. Focused sub-skills carry copies of some of these files; edit only the coordinator's file, then run `python scripts/sync_reference_copies.py`. The validator fails when a copy has drifted.
 - Put reusable workflow prompts in `commands/`.
 - Put public-safe examples in `examples/showcase/`.
 - Add or update eval scenarios in `tests/thermal-fluid-evals/prompt-fixtures.json` when changing expected skill behavior.
