@@ -283,6 +283,17 @@ def validate_skill_resources() -> None:
         require_file(required)
 
 
+def validate_reference_copies() -> None:
+    sys.path.insert(0, str(ROOT / "scripts"))
+    from sync_reference_copies import stale_copies
+
+    stale = stale_copies()
+    if stale:
+        names = ", ".join(path.relative_to(ROOT).as_posix() for path in stale)
+        fail(f"sub-skill reference copies differ from the coordinator references: {names}. "
+             "Run python scripts/sync_reference_copies.py")
+
+
 def main() -> int:
     validate_docs()
     validate_manifests()
@@ -290,6 +301,7 @@ def main() -> int:
     validate_eval_fixtures()
     validate_skill_resources()
     validate_markdown_links()
+    validate_reference_copies()
     print("Repository validation passed.")
     return 0
 
