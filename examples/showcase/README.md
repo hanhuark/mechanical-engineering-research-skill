@@ -11,3 +11,4 @@ They are not experimental results, citations, or performance claims. They are co
 | [`boiling-literature-matrix.md`](boiling-literature-matrix.md) | Literature synthesis by mechanism, method, validity range, and gap. |
 | [`proposal-aims-rewrite.md`](proposal-aims-rewrite.md) | Proposal aims rewritten around barrier, hypothesis, metrics, and risk. |
 | [`figure-discussion-before-after.md`](figure-discussion-before-after.md) | Results discussion rewritten from trend reporting to physical explanation. |
+| [`author-interview-case-study.md`](author-interview-case-study.md) | The author interview run end to end on one results section: what each round surfaced and how the protocol changed. Process only; no data or findings. |
