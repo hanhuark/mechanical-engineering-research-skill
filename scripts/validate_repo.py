@@ -159,6 +159,7 @@ def validate_skill_resources() -> None:
         "skills/mechanical-engineering-research/assets/templates/response-to-reviewers.md",
         "skills/mechanical-engineering-research/assets/templates/reproducibility-manifest.json",
         "skills/mechanical-engineering-research/assets/templates/benchmark-dataset-readme.md",
+        "skills/mechanical-engineering-research/assets/templates/author-decision-record.md",
     ]:
         require_file(required)
     load_json("skills/mechanical-engineering-research/assets/templates/reproducibility-manifest.json")
@@ -184,6 +185,7 @@ def validate_skill_resources() -> None:
             "Vague And Repeated Terms",
             "Reader Focus And Modifier Load",
             "Avoid unspaced em dashes in technical prose",
+            "which leaves",
             "not a zero count",
         ],
         "skills/mechanical-engineering-research/references/scientific-figure-and-artifact-qa.md": [
@@ -193,6 +195,10 @@ def validate_skill_resources() -> None:
             "max, k=2 uncertainty",
         ],
         "skills/mechanical-engineering-research/references/han-hu-research-style.md": [
+            "Patterns From Author Revisions Of AI Drafts",
+            "End the abstract on the strongest physical finding",
+            "Write the conclusion as one connected paragraph",
+            "measured on prose only",
             "Use Arial for all figure text",
             "Refer to subfigures as `Fig. 6a`",
             "Do not treat combining datasets, building a map, or running a model as the innovation by itself",
@@ -211,6 +217,33 @@ def validate_skill_resources() -> None:
             "Build The Evidence Map",
             "revision roadmap",
             "Minimal Handoff Record",
+        ],
+        "skills/mechanical-engineering-research/references/author-guided-ai-writing.md": [
+            "## 1. Interview the author",
+            "Story-level questions carry no suggested answer",
+            "Facts are the AI's job; decisions are the author's",
+            "at most two follow-ups",
+            "[OPEN",
+            "author-decision-record.md",
+            "one unit as the task",
+            "Load the author's style references before proposing any wording",
+            "earlier version the author approved",
+            "Analysis requests between rounds",
+            "Run the prose metrics on every unit draft",
+        ],
+        "skills/research-writing-literature/SKILL.md": [
+            "interview me",
+            "author-interview-question-bank.md",
+        ],
+        "commands/me-author-guided-writing.md": [
+            "Do not construct the author's answers",
+            "author-decision-record.md",
+            "consistency pass",
+        ],
+        "skills/mechanical-engineering-research/references/author-interview-question-bank.md": [
+            "A complete answer is specific, comparative, bounded, and traceable",
+            "Round 1: Story",
+            "does not establish",
         ],
     }
     for path, required_phrases in style_files.items():

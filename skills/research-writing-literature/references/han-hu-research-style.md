@@ -129,3 +129,35 @@ For LaTeX/Overleaf submission packages:
 - If a journal system rejects a zip, prepare a flat individual-upload package with figure paths adjusted so uploaded figures sit beside the main `.tex` file.
 - Keep the review PDF and source files conceptually separate: the PDF is for review, while the source is for production.
 - For cover letters, state journal fit, contribution, originality/no-parallel-submission, conflicts, author approval, and any preprint relationship.
+
+## Patterns From Author Revisions Of AI Drafts
+
+These patterns come from comparing three of the author's manuscripts across versions: the AI draft, the AI revision after many rounds of the author's comments, and the author's own direct revision. Each pattern below appeared in at least two of the three manuscripts, or is stated as a single-manuscript habit. The examples are synthetic.
+
+**Name things the way the field names them.** Name test conditions by the boiling regime visible in the images, model regimes by the physical limit that governs them, and figures, baselines, and section headings by the field's standard categories. A coined label such as `closure branch` or `high-flux arm` becomes `evaporation-limited regime` or `near CHF`, and "the wall-temperature record" becomes "the boiling curves".
+
+**Use literal verbs.** Do not give instruments, features, or models human actions. "Acoustic emission reaches the vapor dynamics" becomes "acoustic emission sensing characterizes the vapor dynamics without optical access", and "the model receives frames and returns masks" becomes a description of the input images and the output masks. Report prior work in the present perfect or the passive.
+
+**Open an analysis with its purpose and the variable changed.** "To evaluate the effect of temporal context on prediction, we have varied the number of frames per sequence from 1 to 32." The first person and the present perfect are both acceptable here. The form "To examine X, Fig. N plots Y against Z" also works. Name the object directly instead of writing "how X influences Y".
+
+**Build each figure paragraph in four steps.** State what the figure plots, Y against X and under which conditions; give the values as an ordered progression tied to each method or condition, pairing them with `respectively` where that is shorter; close the observation with a `Thus,` takeaway; then give the physical reading with `may` or `could` when the mechanism is inferred. Delete derived ratios and differences that the reader can compute from the stated values.
+
+**State headline findings directly.** "The temporal model is shown to reduce the prediction error by half" states a finding. "It is observed that" is acceptable occasionally, though not as the opener of every paragraph.
+
+**Use "this work", "this study", and "we" for scope and ownership.** They are appropriate for local definitions ("In this work, a case is one nominal mass flux"), purpose openers, the opening of the conclusion, and the group's own prior work ("In our previous work, we proposed..."). Avoid them for self-evaluation, as in "this study establishes".
+
+**Place a limitation once, where it applies, and frame it by its consequence.** Two forms recur. A fitness-for-purpose sentence: "Although the acoustic calibration is less precise than a reference hydrophone, it is sufficient for the steady-state comparison in this work." A validation paragraph placed directly after the comparison figure: name the sources of scatter, state how inputs the literature did not report were treated, then write "Within these limitations, the data follow the predicted trend" and give the mechanism. Delete a stand-alone limitations section, a list of validation needs, and one-line verdicts that deny a claim or announce a limit.
+
+**Keep provenance out of the main text.** Delete narration of how data were transcribed, audited, or reconstructed, and inventories of files, workbooks, and code. State the inputs that were used, with citations.
+
+**End the introduction with a plain preview.** The last paragraph says what is done and with which analyses, in plain terms; the passive voice is acceptable. Leave result numbers, definitions, and data-release statements out of it.
+
+**For model papers, state the advance as physics.** Frame the contribution as the physical term added to a named conservation equation, justify each input by the physical definition of the quantity it feeds, mark model outputs as `predicted` or `modeled`, and number the assumptions and state each one positively. When one dimensionless group carries the result, give it a physical meaning.
+
+**Single-manuscript habits.** `including` introduces the members of a set and `i.e.,` an equivalent. In Word manuscripts, figure and table callouts in running text were set in bold; follow the venue for this.
+
+## Abstract, Conclusion, And Sentence Length
+
+- End the abstract on the strongest physical finding or design implication, with its scope built into the sentence. Do not end on a disclaimer, a statement of what the work does not establish, a data or code release, a workflow summary, or a count of records and sources.
+- Write the conclusion as one connected paragraph in the present tense, unnumbered unless the venue requires a list. Use "is shown to" for the headline findings, and leave out figure citations and lists of further validation needs.
+- Measured on prose only, the author's own sentences average 19 to 22 words, with 6 percent or less above 35 words. The coordinator's `han-hu-research-style.md` carries the full measured prose targets.
